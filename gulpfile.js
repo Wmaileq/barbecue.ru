@@ -11,7 +11,8 @@ const gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   gwatch = require('gulp-watch'),
   rimraf    = require('rimraf'),
-  include = require('gulp-include');
+  include = require('gulp-include'),
+  iconfont = require('gulp-iconfont');
 
 const path = {
   public: {
@@ -29,6 +30,7 @@ const path = {
     styles: 'src/scss/*.scss',
     js: 'src/js/',
     img: 'src/img/**/*.*',
+    svg: 'src/icons/**/*.*',
     fonts: 'src/fonts/*.*'
   },
   clean: './public'
@@ -91,7 +93,17 @@ function buildFonts() {
     .pipe(gulp.dest(path.public.fonts))
 }
 
-const build = gulp.series(buildHTML, buildCSS, buildJS, buildImgs, buildFonts);
+function buildIcons() {
+  return gulp.src(path.src.svg)
+    .pipe(iconfont({
+      fontName: 'barbecueFont',
+      prependUnicode: true,
+      formats: ['svg']
+    }))
+    .pipe(gulp.dest(path.public.fonts))
+}
+
+const build = gulp.series(buildHTML, buildCSS, buildJS, buildImgs, buildFonts, buildIcons);
 
 function watch() {
   gwatch(path.src.blocks, buildHTML);
@@ -101,7 +113,8 @@ function watch() {
   gwatch(path.src.csslibs, buildCSS);
   gwatch(path.src.js, buildJS);
   gwatch(path.src.img, buildImgs);
-  gwatch(path.src.img, buildFonts);
+  gwatch(path.src.fonts, buildFonts);
+  gwatch(path.src.svg, buildIcons);
 }
 
 function clean(cb) {

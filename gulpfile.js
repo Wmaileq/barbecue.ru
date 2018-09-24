@@ -25,9 +25,8 @@ const path = {
   src: {
     blocks: 'src/*.html',
     components: 'src/components/*.html',
-    csslibs: 'src/scss/libs/*.css',
-    csscomponents: 'src/scss/components/*.scss',
-    styles: 'src/scss/*.scss',
+    styles: 'src/scss/**/*.*',
+    styleIndex: 'src/scss/index.scss',
     js: 'src/js/',
     img: 'src/img/**/*.*',
     svg: 'src/icons/**/*.*',
@@ -61,7 +60,7 @@ function buildHTML() {
 }
 
 function buildCSS() {
-  return gulp.src([path.src.csslibs, path.src.csscomponents, path.src.styles])
+  return gulp.src([path.src.styleIndex])
     .pipe(scss().on('error', notify.onError({
       message: "<%= error.message %>",
       title:   "CSS compilation error"
@@ -109,8 +108,6 @@ function watch() {
   gwatch(path.src.blocks, buildHTML);
   gwatch(path.src.components, buildHTML);
   gwatch(path.src.styles, buildCSS);
-  gwatch(path.src.csscomponents, buildCSS);
-  gwatch(path.src.csslibs, buildCSS);
   gwatch(path.src.js, buildJS);
   gwatch(path.src.img, buildImgs);
   gwatch(path.src.fonts, buildFonts);

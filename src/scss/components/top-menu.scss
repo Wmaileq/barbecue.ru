@@ -1,0 +1,103 @@
+.top-menu {
+  &__wrapper {
+    display: flex;
+    height: 71px;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 74px;
+    width: 122px;
+    height: 50px;
+    background: url('/img/logo.png') center center no-repeat;
+    background-size: cover;
+  }
+  &__nav {
+    display: flex;
+    list-style-type: none;
+  }
+  &__nav-item {
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    a {
+      position: relative;
+      color: #fff;
+      transition: text-shadow 0.2s;
+      &:hover, &.active {
+        text-shadow: 0 0 16px #d9772e;
+      }
+    }
+    &.more {
+      & > a {
+        padding-right: 1rem;
+        &:after {
+          content: '';
+          position: absolute;
+          left: auto;
+          right: 0;
+          bottom: calc(50% - 3.5px);
+          width: 7px;
+          height: 7px;
+          background-color: transparent;
+          border-bottom: 1px solid #eda55e;
+          border-right: 1px solid #eda55e;
+          transform: rotate(45deg);
+          transition: transform 0.2s, bottom 0.2s;
+        }
+      }
+      &.active {
+        & > a {
+          &:after {
+            transform: rotate(-135deg);
+            bottom: calc(50% - 7px);
+          }
+        }
+        .top-menu__nav-dropdown {
+          visibility: visible;
+          padding: 2.75rem;
+          max-width: none;
+          max-height: none;
+        }
+      }
+    }
+  }
+  &__nav-dropdown {
+    position: absolute;
+    visibility: hidden;
+    padding: 0;
+    max-width: 0;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #d9a55a;
+    box-shadow: -22px 16px 45px 6px rgba(0, 0, 0, 0.28);
+    transition: all 0.35s;
+    ul {
+      list-style-type: none;
+    }
+    a {
+      position: relative;
+      line-height: 1.75;
+      color: #1f1e22;
+      font-weight: 500;
+      font-size: 1.125rem;
+      transition: color 0.15s;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #fff;
+        transition: width 0.2s;
+      }
+      &:hover, &.active {
+        color: #fff;
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

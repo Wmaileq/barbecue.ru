@@ -15,8 +15,8 @@
   <div class="container">
     <div class="main__wrapper">
       <div class="main__nav">
-        <div class="main__nav-item">
-          <div class="main__nav-icon"></div>
+        <div onclick="toggleNavSlide(this)" class="main__nav-item">
+          <i class="icon icon-fireplace main__nav-icon"></i>
           <div class="main__nav-text">Печи-барбекю</div>
           <div class="main__nav-slide">
             <ul class="main__nav-menu">
@@ -33,8 +33,8 @@
             </ul>
           </div>
         </div>
-        <div class="main__nav-item">
-          <div class="main__nav-icon"></div>
+        <div onclick="toggleNavSlide(this)" class="main__nav-item">
+          <i class="icon icon-bonfire main__nav-icon"></i>
           <div class="main__nav-text">Очаги садовые</div>
           <div class="main__nav-slide">
             <ul class="main__nav-menu">
@@ -44,12 +44,12 @@
             </ul>
           </div>
         </div>
-        <div class="main__nav-item">
-          <div class="main__nav-icon"></div>
+        <div class="main__nav-item no-menu">
+          <i class="icon icon-besedka main__nav-icon"></i>
           <div class="main__nav-text">Детские домики</div>
         </div>
-        <div class="main__nav-item">
-          <div class="main__nav-icon"></div>
+        <div onclick="toggleNavSlide(this)" class="main__nav-item">
+          <i class="icon icon-director-chair main__nav-icon"></i>
           <div class="main__nav-text">Аксессуары и подарочные наборы</div>
           <div class="main__nav-slide">
             <ul class="main__nav-menu">
@@ -74,16 +74,27 @@
               <div class="main__slide-pretext">С гарантией и пожизненным пост-гарантийным обслуживанием</div>
               <h2 class="main__slide-heading">Производство и продажа сборных печей-барбекю</h2>
               <p class="main__slide-more">Cадовые печи, грили барбекю с доставкой по РФ и монтажом по Москве и Московской области от производителя</p>
-              <button class="main__slide-button">Подобрать печь</button>
+              <button class="button main__slide-button">Подобрать печь</button>
             </div>
-            <div class="main__slide-image"></div>
+            <div class="main__slide-image">
+              <img src="/img/main-slider/7.png" alt="." class="main__anim main__anim_7"/>
+              <img src="/img/main-slider/6.png" alt="." class="main__anim main__anim_6"/>
+              <img src="/img/main-slider/5.png" alt="." class="main__anim main__anim_5"/>
+              <img src="/img/main-slider/1.png" alt="." class="main__anim main__anim_1"/>
+              <img src="/img/main-slider/2.png" alt="." class="main__anim main__anim_2"/>
+              <img src="/img/main-slider/8.png" alt="." class="main__anim main__anim_8"/>
+              <img src="/img/main-slider/9.png" alt="." class="main__anim main__anim_9"/>
+              <img src="/img/main-slider/3.png" alt="." class="main__anim main__anim_3"/>
+              <img src="/img/main-slider/4.png" alt="." class="main__anim main__anim_4"/>
+              <img src="/img/main-slider/fire.gif" alt="." class="main__anim main__anim_fire"/>
+            </div>
           </div>
           <div class="main__slide">
             <div class="main__slide-text">
               <div class="main__slide-pretext">Уникальная ручная работа</div>
               <h2 class="main__slide-heading">Сказочные декоративные домики для детей! </h2>
               <p class="main__slide-more">Всем, у кого есть дети. Всем, кто сам хочет вернуться в это счастливое и беззаботное время. Всем романтикам и творческим натурам.</p>
-              <button class="main__slide-button">Подобрать</button>
+              <button class="button main__slide-button">Подобрать</button>
             </div>
             <div class="main__slide-image"></div>
           </div>
@@ -92,7 +103,7 @@
               <div class="main__slide-pretext">По низким ценам!</div>
               <h2 class="main__slide-heading">Кастровые чаши и сферы</h2>
               <p class="main__slide-more">Наша компания предлагает широкий ассортимент кострищ и костровых чаш из металла, а также садовые мангалы из кирпича - вы обязательно найдёте себе "огненный подарок" по душе!</p>
-              <button class="main__slide-button">Подобрать</button>
+              <button class="button main__slide-button">Подобрать</button>
             </div>
             <div class="main__slide-image"></div>
           </div>
@@ -101,7 +112,7 @@
               <div class="main__slide-pretext">Мы производители, поэтому устанавливаем самые низкие цены</div>
               <h2 class="main__slide-heading">Аксессуары, подарочные наборы</h2>
               <p class="main__slide-more">Бутылочницы, дровоколы, фартуки, дровницы, шампуры и многое другое, что может пригодиться в Вашем хозяйстве.</p>
-              <button class="main__slide-button">Подобрать</button>
+              <button class="button main__slide-button">Подобрать</button>
             </div>
             <div class="main__slide-image"></div>
           </div>
@@ -116,5 +127,19 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="/bundle.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.main__slider-wrapper').slick({
+      arrows: false,
+      draggable: false
+    })
+    $('.main__slider-arrow_left').on('click', function(){
+      $('.main__slider-wrapper').slick('slickPrev');
+    })
+    $('.main__slider-arrow_right').on('click', function(){
+      $('.main__slider-wrapper').slick('slickNext');
+    })
+  })
+</script>
 </body>
 </html>

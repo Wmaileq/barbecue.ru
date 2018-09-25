@@ -73,7 +73,7 @@ function buildCSS() {
 }
 
 function buildJS() {
-  return gulp.src([path.src.js + 'main.js'])
+  return gulp.src([path.src.js + 'slick.min.js',path.src.js + 'main.js'])
     .pipe(concatjs('bundle.js'))
     .pipe(uglify())
     .pipe(gulp.dest(path.public.js))

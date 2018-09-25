@@ -7,7 +7,7 @@
         <li class="top-menu__nav-item"><a href="#">Каталог</a></li>
         <li class="top-menu__nav-item"><a href="#">Оплата/Доставка</a></li>
         <li class="top-menu__nav-item"><a href="#">Контакты</a></li>
-        <li class="top-menu__nav-item more active">
+        <li class="top-menu__nav-item more">
           <a onclick="toggleNavMore()" href="#">Еще</a>
           <div class="top-menu__nav-dropdown">
             <ul>
@@ -20,9 +20,10 @@
         </li>
       </ul>
       <div class="top-menu__icon-nav">
-        <div onclick="toggleDirectorModal()" class="top-menu__pen-icon"></div>
-        <div onclick="toggleCallbackModal()" class="top-menu__phone-icon"></div>
-        <div onclick="toggleSearchForm()" class="top-menu__search-icon">
+        <div onclick="toggleDirectorModal()" class="top-menu__icon"><i class="icon icon-pencil"></i></div>
+        <div onclick="toggleCallbackModal()" class="top-menu__icon"><i class="icon icon-phone"></i></div>
+        <div class="top-menu__icon">
+          <i onclick="toggleSearchForm()" class="icon icon-search"></i>
           <div class="top-menu__search-wrapper">
             <span class="top-menu__search-inner-icon"></span>
             <input type="text" class="top-menu__search-input" placeholder="Поиск по сайту...">
@@ -36,13 +37,14 @@
         </div>
         <div class="top-menu__tel"><a href="tel:+74957253632">+7 (495) 725-36-32</a></div>
       </div>
-      <div class="top-menu__card">
-        <div class="top-menu__card-icon">
-          <div class="top-menu__card-quantity">3</div>
+      <div class="top-menu__cart">
+        <div class="top-menu__cart-icon">
+          <i class="icon icon-shopping-cart"></i>
+          <div class="top-menu__cart-quantity">3</div>
         </div>
-        <div class="top-menu__card-text">
-          <div class="top-menu__card-heading">Покупки</div>
-          <div class="top-menu__card-price">85 800 р.</div>
+        <div class="top-menu__cart-text">
+          <div class="top-menu__cart-heading">Покупки</div>
+          <div class="top-menu__cart-price">85 800 р.</div>
         </div>
       </div>
     </div>

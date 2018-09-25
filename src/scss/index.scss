@@ -1,3 +1,6 @@
-@import 'common.scss';
-@import './components/top-menu.scss';
-@import 'main.scss';
+@import './libs/slick';
+@import './common';
+@import './components/button';
+@import './components/top-menu';
+@import './components/to-top-arrow';
+@import './main';

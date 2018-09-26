@@ -1,0 +1,67 @@
+/*
+<div class="nav-arrows">
+  <div onclick="" class="nav-arrows__arrow nav-arrows__arrow_left"></div>
+  <div onclick="" class="nav-arrows__arrow nav-arrows__arrow_right"></div>
+</div>
+*/
+.nav-arrows {
+  position: absolute;
+  top: 3rem;
+  left: 11rem;
+  z-index: 99;
+  display: flex;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 2.5rem;
+    top: calc(50% - 1px);
+    width: 1.25rem;
+    height: 2px;
+    background-color: #5f4a39;
+    opacity: 0.43;
+  }
+  &__arrow {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid rgba(#e1a567, .33);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(#e1a567, 0.17);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 0.1675rem);
+      left: 0.75rem;
+      width: 0.375rem;
+      height: 0.375rem;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1px;
+      background-color: #e1a567;
+    }
+    &_left {
+      margin-right: 1.25rem;
+      &:before {
+        border-left: 1px solid #e1a567;
+        border-bottom: 1px solid #e1a567;
+        transform: rotate(45deg);
+      }
+    }
+    &_right {
+      &:before {
+        left: 1.25rem;
+        border-left: 1px solid #e1a567;
+        border-bottom: 1px solid #e1a567;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}

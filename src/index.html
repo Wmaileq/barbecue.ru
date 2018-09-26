@@ -48,7 +48,7 @@
           <i class="icon icon-besedka main__nav-icon"></i>
           <div class="main__nav-text">Детские домики</div>
         </div>
-        <div onclick="toggleNavSlide(this)" class="main__nav-item">
+        <div onclick="toggleNavSlide(this)" class="main__nav-item main__nav-item_long">
           <i class="icon icon-director-chair main__nav-icon"></i>
           <div class="main__nav-text">Аксессуары и подарочные наборы</div>
           <div class="main__nav-slide">
@@ -64,9 +64,9 @@
         </div>
       </div>
       <div class="main__slider">
-        <div class="main__slider-nav">
-          <div class="main__slider-arrow main__slider-arrow_left"></div>
-          <div class="main__slider-arrow main__slider-arrow_right"></div>
+        <div class="main__slider-nav nav-arrows">
+          <div onclick="prevMainSlide()" class="nav-arrows__arrow nav-arrows__arrow_left"></div>
+          <div onclick="nextMainSlide()" class="nav-arrows__arrow nav-arrows__arrow_right"></div>
         </div>
         <div class="main__slider-wrapper">
           <div class="main__slide">
@@ -86,7 +86,7 @@
               <img src="/img/main-slider/9.png" alt="." class="main__anim main__anim_9"/>
               <img src="/img/main-slider/3.png" alt="." class="main__anim main__anim_3"/>
               <img src="/img/main-slider/4.png" alt="." class="main__anim main__anim_4"/>
-              <img src="/img/main-slider/fire.gif" alt="." class="main__anim main__anim_fire"/>
+              <!--<img src="/img/main-slider/fire.gif" alt="." class="main__anim main__anim_fire"/>-->
             </div>
           </div>
           <div class="main__slide">
@@ -96,7 +96,9 @@
               <p class="main__slide-more">Всем, у кого есть дети. Всем, кто сам хочет вернуться в это счастливое и беззаботное время. Всем романтикам и творческим натурам.</p>
               <button class="button main__slide-button">Подобрать</button>
             </div>
-            <div class="main__slide-image"></div>
+            <div class="main__slide-image main__slide-image_houses">
+              <img src="/img/main-slider/childhouses.png" alt="Сказочные декоративные домики ручной работы для детей">
+            </div>
           </div>
           <div class="main__slide">
             <div class="main__slide-text">
@@ -114,10 +116,21 @@
               <p class="main__slide-more">Бутылочницы, дровоколы, фартуки, дровницы, шампуры и многое другое, что может пригодиться в Вашем хозяйстве.</p>
               <button class="button main__slide-button">Подобрать</button>
             </div>
-            <div class="main__slide-image"></div>
+            <div class="main__slide-image main__slide-image_gifts">
+              <img src="/img/main-slider/gifts.png" alt="Аксессуары и подарочные работы по низким ценам">
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="discounts">
+  <div class="container">
+    <div class="discounts-wrapper">
+      <h2 class="discounts__heading">Хиты продаж, акции</h2>
+
     </div>
   </div>
 </section>
@@ -132,12 +145,6 @@
     $('.main__slider-wrapper').slick({
       arrows: false,
       draggable: false
-    })
-    $('.main__slider-arrow_left').on('click', function(){
-      $('.main__slider-wrapper').slick('slickPrev');
-    })
-    $('.main__slider-arrow_right').on('click', function(){
-      $('.main__slider-wrapper').slick('slickNext');
     })
   })
 </script>

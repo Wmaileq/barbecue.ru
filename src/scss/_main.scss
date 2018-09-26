@@ -1,17 +1,27 @@
+$animation-duration: 6s;
 .main {
+  position: relative;
   padding-top: 71px;
   margin-top: -71px;
   display: flex;
   background: url('/img/main-bg.png') bottom right no-repeat;
+  background-size: cover;
+  @supports (background-blend-mode: color-burn) {
+    background: #1f1e22 url('/img/main-bg.jpg') bottom right no-repeat;
+    background-size: cover;
+    background-blend-mode: color-burn;
+  }
+
   &__wrapper {
     position: relative;
     display: flex;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   &__nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 3rem;
   }
   &__nav-item {
     margin-bottom: 3rem;
@@ -67,7 +77,7 @@
       .main__nav-slide {
         transform-origin: 0 2.8rem;
         &:before {
-          top: 2.8rem;
+          top: 3.2rem;
         }
       }
     }
@@ -75,7 +85,7 @@
       .main__nav-slide {
         transform-origin: 0 12rem;
         &:before {
-          top: 12.4rem;
+          top: 13.5rem;
         }
       }
     }
@@ -91,12 +101,15 @@
       .main__nav-slide {
         transform-origin: 0 32rem;
         &:before {
-          top: 31.8rem;
+          top: 34.2rem;
         }
       }
     }
     &.no-menu:before {
       display: none;
+    }
+    &_long:hover:after {
+      transform: translateY(-7.5rem)
     }
   }
   &__nav-icon {
@@ -171,64 +184,9 @@
   }
   &__slider-nav {
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 11rem;
     z-index: 99;
-    display: flex;
-    &:before {
-      content: '';
-      position: absolute;
-      left: 2.5rem;
-      top: calc(50% - 1px);
-      width: 1.25rem;
-      height: 2px;
-      background-color: #5f4a39;
-      opacity: 0.43;
-    }
-  }
-  &__slider-arrow {
-    position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    border: 2px solid rgba(#e1a567, .33);
-    cursor: pointer;
-    &:hover {
-      background-color: rgba(#e1a567, 0.17);
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      top: calc(50% - 0.1675rem);
-      left: 0.75rem;
-      width: 0.375rem;
-      height: 0.375rem;
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0.75rem;
-      width: 1rem;
-      height: 1px;
-      background-color: #e1a567;
-    }
-    &_left {
-      margin-right: 1.25rem;
-      &:before {
-        border-left: 1px solid #e1a567;
-        border-bottom: 1px solid #e1a567;
-        transform: rotate(45deg);
-      }
-    }
-    &_right {
-      &:before {
-        left: 1.25rem;
-        border-left: 1px solid #e1a567;
-        border-bottom: 1px solid #e1a567;
-        transform: rotate(-135deg);
-      }
-    }
   }
   &__slider-wrapper {
     max-width: 100%;
@@ -236,15 +194,15 @@
   &__slide {
     position: relative;
     padding-bottom: 10rem;
-    padding-top: 7.5rem;
-    padding-left: 3rem;
+    padding-top: 10.5rem;
+    padding-left: 3.8rem;
   }
   &__slide-text {
     display: inline-block;
     max-width: 28.375rem;
   }
   &__slide-pretext {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.7rem;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1rem;
@@ -252,57 +210,79 @@
     letter-spacing: 0.8px;
   }
   &__slide-heading {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-family: 'Museo Cyrl', serif;
     font-weight: 900;
     font-size: 2.625rem;
     color: #fff;
   }
   &__slide-more {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
+    max-width: 22rem;
     color: #cab19d;
     font-size: 1.125rem;
+    line-height: 1.7;
     font-weight: 300;
   }
   &__slide-image {
     display: inline-block;
+    &_houses {
+      & > img {
+        position: absolute;
+        top: 3rem;
+        right: -8rem;
+      }
+    }
+    &_gifts {
+      & > img {
+        position: absolute;
+        top:0rem;
+        right: -8rem;
+      }
+    }
   }
   &__anim {
     position: absolute;
     &_1 {
-      top: 10px;
+      top: 50px;
       right: 179px;
+      animation: anim6 infinite $animation-duration ease;
     }
     &_2 {
-      top: 267px;
+      top: 307px;
       right: 127px;
+      animation: anim5 infinite $animation-duration ease;
     }
     &_3 {
-      top: 294px;
+      top: 334px;
       right: 214px;
+      animation: anim1 infinite $animation-duration ease;
     }
     &_4 {
-      top: 289px;
+      top: 329px;
       right: 150px;
+      animation: anim3 infinite $animation-duration ease;
     }
     &_5 {
-      top: 298px;
+      top: 338px;
       right: 332px;
+      animation: anim2 infinite $animation-duration ease;
     }
     &_6 {
-      top: 298px;
+      top: 338px;
       right: 82px;
     }
     &_7 {
-      top: 425px;
+      top: 465px;
       right: 84px;
+      animation: anim4 infinite $animation-duration ease;
     }
     &_8 {
-      top: 366px;
+      top: 406px;
       right: 334px;
     }
     &_9 {
-      top: 405px;
+      top: 445px;
       right: 325px;
     }
     &_fire {
@@ -325,5 +305,127 @@
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    transform: translateY(-30px)
+  }
+  10% {
+    transform: translateY(-30px)
+  }
+  20% {
+    transform: translateY(0)
+  }
+  90% {
+    transform: translateY(0)
+  }
+  100% {
+    transform: translateY(-30px)
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    transform: translateX(-50px)
+  }
+  18% {
+    transform: translateX(-50px)
+  }
+  30% {
+    transform: translateX(0)
+  }
+  80% {
+    transform: translateX(0)
+  }
+  90% {
+    transform: translateX(-50px)
+  }
+  100% {
+    transform: translateX(-50px)
+  }
+}
+@keyframes anim3 {
+  0% {
+    transform: translateX(50px)
+  }
+  18% {
+    transform: translateX(50px)
+  }
+  30% {
+    transform: translateX(0)
+  }
+  80% {
+    transform: translateX(0)
+  }
+  90% {
+    transform: translateX(50px)
+  }
+  100% {
+    transform: translateX(50px)
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    transform: translateY(40px)
+  }
+  18% {
+    transform: translateY(40px)
+  }
+  30% {
+    transform: translateY(0)
+  }
+  80% {
+    transform: translateY(0)
+  }
+  90% {
+    transform: translateY(40px)
+  }
+  100% {
+    transform: translateY(40px)
+  }
+}
+
+@keyframes anim5 {
+  0% {
+    transform: translateY(-40px)
+  }
+  28% {
+    transform: translateY(-40px)
+  }
+  40% {
+    transform: translateY(0)
+  }
+  70% {
+    transform: translateY(0)
+  }
+  80% {
+    transform: translateY(-40px)
+  }
+  100% {
+    transform: translateY(-40px)
+  }
+}
+
+@keyframes anim6 {
+  0% {
+    transform: translateY(-50px)
+  }
+  38% {
+    transform: translateY(-50px)
+  }
+  50% {
+    transform: translateY(0)
+  }
+  60% {
+    transform: translateY(0)
+  }
+  70% {
+    transform: translateY(-50px)
+  }
+  100% {
+    transform: translateY(-50px)
   }
 }

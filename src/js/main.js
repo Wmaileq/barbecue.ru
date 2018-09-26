@@ -11,3 +11,10 @@ function toggleNavSlide(target){
     $(target).addClass('active');
   }
 }
+
+function prevMainSlide(){
+  $('.main__slider-wrapper').slick('slickPrev');
+}
+function nextMainSlide(){
+  $('.main__slider-wrapper').slick('slickNext');
+}

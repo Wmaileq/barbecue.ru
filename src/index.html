@@ -18,7 +18,7 @@
         <div onclick="toggleNavSlide(this)" class="main__nav-item">
           <i class="icon icon-fireplace main__nav-icon"></i>
           <div class="main__nav-text">Печи-барбекю</div>
-          <div class="main__nav-slide">
+          <div class="main__nav-slide main__nav-slide_barbecue">
             <ul class="main__nav-menu">
               <li class="main__nav-link"><a href="#">Белая серия</a></li>
               <li class="main__nav-link"><a href="#">С элементами кирпичной кладки</a></li>
@@ -36,7 +36,7 @@
         <div onclick="toggleNavSlide(this)" class="main__nav-item">
           <i class="icon icon-bonfire main__nav-icon"></i>
           <div class="main__nav-text">Очаги садовые</div>
-          <div class="main__nav-slide">
+          <div class="main__nav-slide main__nav-slide_fireplaces">
             <ul class="main__nav-menu">
               <li class="main__nav-link"><a href="#">Сферы для огня</a></li>
               <li class="main__nav-link"><a href="#">Костровые чаши</a></li>
@@ -51,7 +51,7 @@
         <div onclick="toggleNavSlide(this)" class="main__nav-item main__nav-item_long">
           <i class="icon icon-director-chair main__nav-icon"></i>
           <div class="main__nav-text">Аксессуары и подарочные наборы</div>
-          <div class="main__nav-slide">
+          <div class="main__nav-slide main__nav-slide_kebab">
             <ul class="main__nav-menu">
               <li class="main__nav-link"><a href="#">Наборы шампуров</a></li>
               <li class="main__nav-link"><a href="#">Ручные дровоколы</a></li>
@@ -107,7 +107,9 @@
               <p class="main__slide-more">Наша компания предлагает широкий ассортимент кострищ и костровых чаш из металла, а также садовые мангалы из кирпича - вы обязательно найдёте себе "огненный подарок" по душе!</p>
               <button class="button main__slide-button">Подобрать</button>
             </div>
-            <div class="main__slide-image"></div>
+            <div class="main__slide-image main__slide-image_fireplace">
+              <img src="/img/main-slider/ochagi.png" alt="Кастровые чаши и сферы">
+            </div>
           </div>
           <div class="main__slide">
             <div class="main__slide-text">
@@ -128,9 +130,90 @@
 
 <section class="discounts">
   <div class="container">
-    <div class="discounts-wrapper">
+    <div class="discounts__wrapper">
       <h2 class="discounts__heading">Хиты продаж, акции</h2>
-
+      <div class="nav-arrows discounts__arrows">
+        <div onclick="prevDiscountsSlide()" class="nav-arrows__arrow nav-arrows__arrow_left"></div>
+        <div onclick="nextDiscountsSlide()" class="nav-arrows__arrow nav-arrows__arrow_right"></div>
+      </div>
+      <div class="discounts__all">Смотреть все печи</div>
+      <div class="discounts__content">
+        <div class="discounts__slider">
+          <div class="item discounts__slider-item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="item discounts__slider-item">
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="item discounts__slider-item">
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="item discounts__slider-item">
+            <div class="item__discount">-20%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+        </div>
+        <div class="discounts__bonus">
+          <div class="discounts__bonus-img-wrapper">
+            <img src="/img/bonus-img.jpg" alt="Скидка 20% на все печи барбекю">
+          </div>
+          <p class="discounts__bonus-text">Только с 23 по 31 августа 2018 г. Скидка 20% на все печи-барбекю</p>
+          <a href="#" class="discounts__bonus-more">Все акции</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -145,6 +228,12 @@
     $('.main__slider-wrapper').slick({
       arrows: false,
       draggable: false
+    })
+    $('.discounts__slider').slick({
+      arrows: false,
+      draggable: false,
+      slidesToShow: 3,
+      variableWidth: true
     })
   })
 </script>

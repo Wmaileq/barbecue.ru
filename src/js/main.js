@@ -18,3 +18,10 @@ function prevMainSlide(){
 function nextMainSlide(){
   $('.main__slider-wrapper').slick('slickNext');
 }
+function prevDiscountsSlide(){
+  $('.discounts__slider').slick('slickPrev');
+}
+function nextDiscountsSlide(){
+  $('.discounts__slider').slick('slickNext');
+}
+

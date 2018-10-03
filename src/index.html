@@ -10,7 +10,7 @@
 
 //=include ./components/topmenu.html
 //=include ./components/to-top-arrow.html
-
+//=include ./components/parallax.html
 <section class="main">
   <div class="container">
     <div class="main__wrapper">
@@ -228,13 +228,14 @@
     $('.main__slider-wrapper').slick({
       arrows: false,
       draggable: false
-    })
+    });
     $('.discounts__slider').slick({
       arrows: false,
       draggable: false,
       slidesToShow: 3,
       variableWidth: true
-    })
+    });
+    const rellax = new Rellax('.rellax');
   })
 </script>
 </body>

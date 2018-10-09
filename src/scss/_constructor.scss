@@ -1,8 +1,17 @@
 .constructor {
   padding-top: 9rem;
-  padding-bottom: 6rem;
+  padding-bottom: 14rem;
+  background: #1f1e22 url('/img/constructor-bg.jpg') top left no-repeat;
   &__wrapper {
     display: flex;
+  }
+  &__image {
+    margin-left: -4.6rem;
+    margin-bottom: 2rem;
+    width: 37.4375rem;
+    height: 46.125rem;
+    background: url('/img/constructor-img.png') center center no-repeat;
+    background-size: cover;
   }
   &__hint {
     display: flex;
@@ -15,6 +24,13 @@
       font-family: barbecue;
       color: #d19056;
     }
+  }
+  &__slider {
+    width: 43.5rem;
+  }
+  &__slide {
+    width: 43.5rem;
+    padding: 10.5rem 3rem 4rem 3rem;
   }
   &__head {
     margin-bottom: 1rem;
@@ -40,17 +56,20 @@
     }
   }
   &__heading {
+    margin-bottom: 5rem;
     font-family: 'Museo Cyrl', serif;
     font-size: 3.75rem;
     font-weight: 900;
     color: #fff;
   }
   &__variants {
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
   }
   &__variant {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: calc(50% - 20px);
@@ -58,7 +77,53 @@
     color: #fff;
     font-size: 1.125rem;
     font-weight: 300;
+    border: 0.25rem solid transparent;
     box-shadow: 0 0 65px 8px rgba(20, 19, 23, 0.82);
     background-color: #1f1e22;
+    transition: border 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    &:hover {
+      border: 0.25rem solid #d9a55a;
+      box-shadow: 0 0 65px 8px rgba(20, 19, 23, 0.82), 0 0 65px 8px rgba(#d9a55a, 0.2) inset;
+    }
+  }
+  &__icon-wrapper {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: #d19056;
+  }
+  &__button {
+    position: relative;
+    width: 100%;
+    height: 5.375rem;
+    font-size: 1.5rem;
+    &:hover {
+      text-shadow: 0 0 1rem #a58860;
+      &:after {
+        transform: translateX(5.375rem);
+      }
+      &:before {
+        transform: translateX(5.825rem) rotate(-135deg);
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0.625rem;
+      height: 0.625rem;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: translateX(5.45rem) rotate(-135deg);
+      transition: transform 0.2s;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 1.75rem;
+      height: 2px;
+      background-color: #fff;
+      transform: translateX(5rem);
+      transition: transform 0.2s;
+    }
   }
 }

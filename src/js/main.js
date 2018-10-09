@@ -24,4 +24,6 @@ function prevDiscountsSlide(){
 function nextDiscountsSlide(){
   $('.discounts__slider').slick('slickNext');
 }
-
+function nextConstructorSlide(){
+  $('.constructor__slider').slick('slickNext')
+}

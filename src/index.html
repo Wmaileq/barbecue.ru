@@ -233,10 +233,25 @@
           </div>
           <div class="constructor__heading">Чем собираетесь топить?</div>
           <div class="constructor__variants">
-            <div class="constructor__variant"><i class="icon icon-coal"></i>Дрова + уголь</div>
-            <div class="constructor__variant"><i class="icon icon-coal"></i>Только уголь</div>
+            <div class="constructor__variant">
+              <div class="constructor__icon-wrapper">
+                <i class="icon icon-log-nice"></i>
+                <i class="icon icon-coal"></i>
+              </div>
+              <div class="constructor__variant-text">
+                Дрова + уголь
+              </div>
+            </div>
+            <div class="constructor__variant">
+              <div class="constructor__icon-wrapper">
+                <i class="icon icon-coal"></i>
+              </div>
+              <div class="constructor__variant-text">
+                Только уголь
+              </div>
+            </div>
           </div>
-          <div class="button constructor__button">Дальше</div>
+          <div onclick="nextConstructorSlide()" class="button constructor__button">Дальше</div>
         </div>
         <div class="constructor__slide">
           <div class="constructor__head">
@@ -245,10 +260,53 @@
           </div>
           <div class="constructor__heading">Где будет стоять печь-барбекю?</div>
           <div class="constructor__variants">
-            <div class="constructor__variant"><i class="icon icon-coal"></i>В беседке</div>
-            <div class="constructor__variant"><i class="icon icon-coal"></i>В саду</div>
+            <div class="constructor__variant">
+              <div class="constructor__icon-wrapper">
+                <i class="icon icon-besedka"></i>
+              </div>
+              <div class="constructor__variant-text">
+                В беседке
+              </div></div>
+            <div class="constructor__variant">
+              <div class="constructor__icon-wrapper">
+                <i class="icon icon-house"></i>
+              </div>
+              <div class="constructor__variant-text">
+                В саду
+              </div>
+            </div>
           </div>
           <div class="button constructor__button">Дальше</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="whyus">
+  <div class="container">
+    <div class="whyus__wrapper">
+      <div class="whyus__heading">Почему наши печи покупают?</div>
+      <div class="whyus__advantages">
+        <div class="whyus__card">
+          <div class="whyus__card-heading"><i class="icon icon-factory"></i>Собственное производство</div>
+          <div class="whyus__card-text">Обязательный цикл выдерживания печей - 1 месяц: сушка в специальных камерах. Печи устойчивы к атмосферным осадкам</div>
+        </div>
+        <div class="whyus__card">
+          <div class="whyus__card-heading"><i class="icon icon-shield"></i>Держат мороз и пожаробезопасны</div>
+          <div class="whyus__card-text">Специальные огнеупорные материалы не боятся суровых холодов и высоких температур</div>
+        </div>
+        <div class="whyus__card">
+          <div class="whyus__card-heading"><i class="icon icon-storehouse"></i>Все печи в наличии на складе</div>
+          <div class="whyus__card-text">Собственный пополняемый склад. Доставим в течение двух-трех дней с момента подачи заявки</div>
+        </div>
+        <div class="whyus__card">
+          <div class="whyus__card-heading"><i class="icon icon-brickwall"></i>Оперативная сборка</div>
+          <div class="whyus__card-text">Бригада профессионалов соберет печь за 1-4 часа, даст бесплатную консультацию по эксплуатации печи</div>
+        </div>
+        <div class="whyus__card">
+          <div class="whyus__card-heading"><i class="icon icon-award"></i>Пожизненное обслуживание</div>
+          <div class="whyus__card-text">Гарантия 1 год. Пожизненное сервисное и постгарантийное обслуживание</div>
         </div>
       </div>
     </div>
@@ -272,6 +330,11 @@
       slidesToShow: 3,
       variableWidth: true
     });
+    $('.constructor__slider').slick({
+      arrows: false,
+      draggable: false,
+      infinite: false
+    })
     const rellax = new Rellax('.rellax');
   })
 </script>

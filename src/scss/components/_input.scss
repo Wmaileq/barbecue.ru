@@ -1,0 +1,17 @@
+.input {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 3rem;
+  font-family: "Futura PT", sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #d9a55a;
+  transition: border-bottom-color 0.2s;
+  &:hover, &:focus {
+    border-bottom: 2px solid #fc6d06;
+  }
+  &::placeholder{
+    color: #fff;
+  }
+}

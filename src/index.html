@@ -431,8 +431,52 @@
 <section class="diplomas">
   <div class="container">
     <div class="diplomas__wrapper">
-      <div class="diplomas__heading"></div>
-      <div class="diplomas__slider"></div>
+      <div class="diplomas__header">
+        <div onClick="prevDiplomasSlide()" class="diplomas__arrow-left"></div>
+        <div class="diplomas__heading">
+          Сертификаты и дипломы
+        </div>
+        <div onClick="nextDiplomasSlide()" class="diplomas__arrow-right"></div>
+      </div>
+      <div class="diplomas__slider">
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2015.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2016.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2016_1.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2017_1.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2014.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2013.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2012.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2011_1.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2011.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2010.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2010_1.jpg" alt="Дипломы">
+        </div>
+        <div class="diplomas__img">
+          <img src="/img/diplomas/2009_4.jpg" alt="Дипломы">
+        </div>
+      </div>
+      <button class="button diplomas__button">Подробнее о нас</button>
     </div>
   </div>
 </section>
@@ -458,8 +502,15 @@
       arrows: false,
       draggable: false,
       infinite: false
-    })
-    const rellax = new Rellax('.rellax');
+    });
+    $('.diplomas__slider').slick({
+      arrows: false,
+      draggable: false,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      variableWidth: true
+    });
+    // const rellax = new Rellax('.rellax');
   })
 </script>
 </body>

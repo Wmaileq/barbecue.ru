@@ -27,3 +27,9 @@ function nextDiscountsSlide(){
 function nextConstructorSlide(){
   $('.constructor__slider').slick('slickNext')
 }
+function prevDiplomasSlide(){
+  $('.diplomas__slider').slick('slickPrev');
+}
+function nextDiplomasSlide(){
+  $('.diplomas__slider').slick('slickNext');
+}

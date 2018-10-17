@@ -1,5 +1,114 @@
 .diplomas {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 13.75rem;
+  background: url('/img/diplomas-bg.jpg') right bottom no-repeat;
+  background-size: contain;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 50px);
+    width: 100%;
+    height: 1px;
+    background-color: rgba(#fff, 0.25);
+  }
   &__wrapper {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__header {
+    margin-bottom: 5rem;
+    display: flex;
+    width: 28rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__heading {
+    font-size: 1.875rem;
+    color: #fff;
+    font-weight: 900;
+    width: 14rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  &__arrow-left {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid rgba(#e1a567, .33);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(#e1a567, 0.17);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 0.1875rem);
+      left: 0.75rem;
+      width: 0.375rem;
+      height: 0.375rem;
+      border-left: 1px solid #e1a567;
+      border-bottom: 1px solid #e1a567;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1px;
+      background-color: #e1a567;
+    }
+  }
+  &__arrow-right {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid rgba(#e1a567, .33);
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(#e1a567, 0.17);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 0.1875rem);
+      width: 0.375rem;
+      height: 0.375rem;
+      left: 1.25rem;
+      border-left: 1px solid #e1a567;
+      border-bottom: 1px solid #e1a567;
+      transform: rotate(-135deg);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0.75rem;
+      width: 1rem;
+      height: 1px;
+      background-color: #e1a567;
+    }
+  }
+  &__slider {
+    margin-bottom: 7.875rem;
+    max-width: 100%
+  }
+  &__img {
+    margin-right: 3rem;
+    width: 16.5rem;
+    height: 23.0625rem;
+    padding: 2.5rem 2rem;
+    background: url('/img/diplomas-bd.png') center center no-repeat;
+    background-size: contain;
+    & > img {
+      width: 12.5rem;
+      height: 18.0625rem;
+    }
   }
 }

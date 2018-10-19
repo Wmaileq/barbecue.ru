@@ -537,6 +537,101 @@
   </div>
 </section>
 
+<section class="main-news">
+  <div class="container">
+    <div class="main-news__wrapper">
+      <div class="main-news__header">
+        <div onClick="prevNewsSlide()" class="main-news__arrow-left"></div>
+        <div class="main-news__heading">
+          <h2 class="main-news__title">Новости</h2>
+          <div class="main-news__hint">Самое актуальное на barbeque.ru</div>
+        </div>
+        <div onClick="nextNewsSlide()" class="main-news__arrow-right"></div>
+      </div>
+      <div class="main-news__slider">
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/1.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/2.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/3.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/4.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/1.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/2.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/3.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+        <div class="main-news__slide">
+          <div class="main-news__img-wrapper">
+            <img class="main-news__img" src="/img/main-news/4.jpg" alt="СЕО текст новости">
+          </div>
+          <div class="main-news__views">54 просмотра</div>
+          <div class="main-news__card-title">Название новости в две строки и не более</div>
+          <div class="main-news__text">Подробное описание новости желательно</div>
+        </div>
+      </div>
+      <div class="main-news__more">Все новости</div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="container">
+    <div class="how__wrapper">
+      <h2 class="how__heading">Как выбрать печь-барбекю</h2>
+      <h3 class="how__title">По своей сути рыбатекст является альтернативой</h3>
+      <p class="how__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+      <h3 class="how__title">По своей сути рыбатекст является альтернативой</h3>
+      <p class="how__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+      <div class="how__more">Читать все статьи</div>
+    </div>
+  </div>
+</section>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -564,6 +659,13 @@
       draggable: false,
       slidesToShow: 4,
       slidesToScroll: 4,
+      variableWidth: true
+    });
+    $('.main-news__slider').slick({
+      arrows: false,
+      draggable: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
       variableWidth: true
     });
     // const rellax = new Rellax('.rellax');

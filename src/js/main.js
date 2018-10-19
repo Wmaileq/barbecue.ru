@@ -33,3 +33,9 @@ function prevDiplomasSlide(){
 function nextDiplomasSlide(){
   $('.diplomas__slider').slick('slickNext');
 }
+function prevNewsSlide(){
+  $('.main-news__slider').slick('slickPrev');
+}
+function nextNewsSlide(){
+  $('.main-news__slider').slick('slickNext');
+}

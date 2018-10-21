@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #252429 url('/img/footer-bg-left.jpg') left bottom no-repeat;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #252429 url('/img/footer-bg-right.jpg') right bottom no-repeat;
+    opacity: 0.37;
+  }
+  &__wrapper {
+    position: relative;
+    padding-top: 9rem;
+    padding-bottom: 4.5rem;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: -8rem;
+      bottom: 0;
+      background: url('/img/footer-img.jpg') bottom right no-repeat;
+      mix-blend-mode: lighten;
+    }
+  }
+  &__top {
+    margin-bottom: 3.5rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 43.75rem;
+  }
+  &__about {
+    width: 9.675rem;
+  }
+  &__logo {
+    margin-bottom: 5rem;
+    width: 7.625rem;
+    height: 3.125rem;
+    background: url('/img/logo.png') center center no-repeat;
+    background-size: cover;
+  }
+  &__about-text {
+    margin-bottom: 4.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__politics {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 300;
+    line-height: 1.5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__nav {
+    width: 9.675rem;
+    list-style-type: none;
+  }
+  &__link-wrapper {
+    margin-bottom: 1.75rem;
+  }
+  &__link {
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__info {
+    width: 12.5rem;
+  }
+  &__time {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    font-size: 0.875rem;
+  }
+  &__phones {
+    margin-bottom: 2.375rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+  }
+  &__phone-link {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #fff;
+  }
+  &__email {
+    display: inline-block;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.2s;
+    &:hover {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &__icons {
+    margin-bottom: 2rem;
+    & > i {
+      font-size: 2.5rem;
+      color: #b58a4f;
+    }
+  }
+  &__icons-heading {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__bottom {
+    width: 22.5rem;
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

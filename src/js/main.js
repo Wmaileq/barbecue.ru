@@ -39,3 +39,6 @@ function prevNewsSlide(){
 function nextNewsSlide(){
   $('.main-news__slider').slick('slickNext');
 }
+function nextClientsSlide(){
+  $('.clients__slider').slick('slickNext');
+}

@@ -537,6 +537,93 @@
   </div>
 </section>
 
+<section class="map">
+  <div class="container">
+    <div class="map__wrapper">
+      <div class="map__header">
+        <div class="map__heading">
+          <h2 class="map__title">Доставим в регионы</h2>
+          <div class="map__hint">Смотрите карту меток дилеров</div>
+        </div>
+        <div class="map__text">Вы далеко от Москвы? Не беда. Доставим в любую точку РФ транспортными компаниями. К тому же у на есть диллерские точки в регионах РФ</div>
+      </div>
+      <div class="map__map">
+        <div class="map__point map__point_1">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Название города</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_2">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Название города 2</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_3">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Название города 3</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_4">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Название города 4</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_5">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Москва</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_6">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Москва</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+        <div class="map__point map__point_7">
+          <i class="icon icon-maps-and-flags map__icon"></i>
+          <div class="map__alert">
+            <div class="map__alert-title">Москва</div>
+            <div class="map__alert-address">Адрес: ул. Ленинска 8/23<br/>
+              Телефон: +7 964 454 23 44</div>
+          </div>
+        </div>
+      </div>
+      <div class="map__footer">
+        <div class="map__info">Подробная фотоинструкция<br/> по сборке + расходный материал прилагаются</div>
+        <div class="map__companies">
+          <div class="map__companies-text">
+            Доставим транспортными компаниями:
+          </div>
+          <div class="map__companies-img">
+            <img src="/img/companies/1.png" alt="Транспортная компания">
+            <img src="/img/companies/2.png" alt="Транспортная компания">
+            <div class="map__compnaies-other">
+              Иные ТК по договоренности
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="clients">
   <div class="container">
     <div class="clients__wrapper">
@@ -802,7 +889,7 @@
       variableWidth: true
     });
     $('.clients__slider').on('init', function(){
-      $('[data-slick-index="1"]').addClass('clients__slide_active');
+      $('.clients__slide[data-slick-index="1"]').addClass('clients__slide_active');
     });
     $('.clients__slider').slick({
       arrows: false,

@@ -98,6 +98,7 @@
       }
       .map__icon {
         color: #e2b778;
+        z-index: 6;
       }
     }
     &:before {
@@ -113,7 +114,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 6;
+    z-index: 4;
     font-size: 2rem;
     color: #fff;
     cursor: pointer;

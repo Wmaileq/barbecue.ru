@@ -19,10 +19,10 @@ function nextMainSlide(){
   $('.main__slider-wrapper').slick('slickNext');
 }
 function prevDiscountsSlide(){
-  $('.discounts__slider').slick('slickPrev');
+  $('.main-discounts__slider').slick('slickPrev');
 }
 function nextDiscountsSlide(){
-  $('.discounts__slider').slick('slickNext');
+  $('.main-discounts__slider').slick('slickNext');
 }
 function nextConstructorSlide(){
   $('.constructor__slider').slick('slickNext')

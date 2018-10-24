@@ -81,6 +81,10 @@
     font-size: 1.125rem;
     color: #fff;
     font-weight: 300;
+    transition: color 0.2s;
+    &:hover {
+      color: #d9a55a;
+    }
   }
   &__info {
     width: 12.5rem;

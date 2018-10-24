@@ -1,0 +1,96 @@
+.media {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 9.75rem;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/notfound-bg.jpg') left bottom no-repeat;
+    opacity: 0.28;
+    mix-blend-mode: screen;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/gifts-bg.jpg') right top no-repeat;
+    opacity: 0.39;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__nav {
+    margin-bottom: 4.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tabs {
+    display: flex;
+  }
+  &__button {
+    &:nth-of-type(1){
+      margin-right: 1.75rem;
+    }
+    &:not(.media__button_active) {
+      background: transparent;
+      border: 2px solid #d9a55a;
+      box-shadow: none;
+      &:hover {
+        border-image: linear-gradient(to right, #efac64, #fc6d06) 1;
+        box-shadow: 0 0.25rem 1.25rem 0.25rem rgba(#bf5a00, 0.24);
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__block {
+    display: none;
+    &.active {
+      margin-bottom: 4.375rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 2.375rem;
+    width: 17.125rem;
+    height: 18.75rem;
+    overflow: hidden;
+  }
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    min-width: 100%;
+    transform: translateX(-50%);
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

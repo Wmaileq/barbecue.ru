@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 300;
+  &__wrapper {
+    display: flex;
+  }
+  &__number {
+    width: 2.5rem;
+    text-align: center;
+    border-right: 2px solid #fff;
+    cursor: pointer;
+    transition: color 0.2s;
+    &:last-of-type{
+      border-right: none;
+    }
+    &.active, &:hover {
+      font-weight: 900;
+      color: #d9a55a;
+    }
+  }
+}

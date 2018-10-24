@@ -1,5 +1,5 @@
 .tv {
-  padding-top: 10.5rem;
+  padding-top: 9.25rem;
   &__container {
     position: relative;
     padding-bottom: 16rem;
@@ -46,7 +46,7 @@
       content: '';
       position: absolute;
       left: calc(50% - 65.875rem/2);
-      top: calc(50% - 65.875rem/2);
+      top: calc(50% - 63.375rem/2);
       width: 65.875rem;
       height: 65.875rem;
       border-radius: 50%;
@@ -56,7 +56,7 @@
   &__heading {
     position: relative;
     z-index: 5;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     font-size: 4.5rem;
     color: #fff;
     font-family: 'Museo Cyrl', serif;

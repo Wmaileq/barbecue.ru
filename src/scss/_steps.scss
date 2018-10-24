@@ -37,7 +37,7 @@
     text-align: center;
   }
   &__hint {
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     width: 16rem;
     text-align: center;
     font-size: 1.5rem;
@@ -46,7 +46,7 @@
     font-weight: 300;
   }
   &__way {
-    margin-bottom: 5.5rem;
+    margin-bottom: 3.75rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -122,5 +122,9 @@
     color: #b48a4d;
     font-size: 1.125rem;
     line-height: 1.875rem;
+  }
+  &__button {
+    width: 17rem;
+    height: 4.5rem;
   }
 }

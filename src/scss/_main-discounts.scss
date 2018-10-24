@@ -1,12 +1,12 @@
 .main-discounts {
-  padding-top: 9rem;
-  padding-bottom: 5rem;
+  padding-top: 8.5rem;
+  padding-bottom: 1.75rem;
   background: #252429 url('/img/discounts-bg.jpg') bottom right no-repeat;
   &__wrapper {
     position: relative;
   }
   &__heading {
-    margin-bottom: 5rem;
+    margin-bottom: 4.5rem;
     font-size: 1.875rem;
     color: #fff;
     text-align: center;
@@ -14,11 +14,11 @@
   &__arrows {
     position: absolute;
     left: 0;
-    top: 0;
+    top: .25rem;
   }
   &__all {
     position: absolute;
-    top: 0;
+    top: .75rem;
     right: 0;
     padding-right: 4rem;
     padding-left: 1.5rem;
@@ -68,7 +68,7 @@
     width: calc(100% - 25rem);
   }
   &__slider-item {
-    margin-right: 3.5rem;
+    margin-right: 3.75rem;
     padding-bottom: 3.5rem;
   }
   &__bonus {
@@ -78,7 +78,7 @@
     margin-bottom: 2rem;
   }
   &__bonus-text {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     font-size: 1.125rem;
     color: #fff;
   }

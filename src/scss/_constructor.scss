@@ -6,31 +6,47 @@
     display: flex;
   }
   &__image {
+    position: relative;
     margin-left: -4.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 37.4375rem;
     height: 46.125rem;
     background: url('/img/constructor-img.png') center center no-repeat;
     background-size: cover;
+    &:before {
+      content: '';
+      position: absolute;
+      left: -6rem;
+      top: 1rem;
+      border: transparent;
+      border-top: 1px solid rgba(#fff, 0.22);
+      border-radius: 50%;
+      width: 56rem;
+      height: 56rem;
+      transform: rotate(-45deg);
+    }
   }
   &__hint {
     display: flex;
     width: 26.25rem;
     font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #cab19d;
     &:before {
       content: '\e80d';
-      margin-right: 1.5rem;
+      margin-right: 2.5rem;
       font-family: barbecue;
       color: #d19056;
+      font-size: 1.75rem;
     }
   }
   &__slider {
     width: 43.5rem;
+    padding-left: 2rem;
   }
   &__slide {
     width: 43.5rem;
-    padding: 10.5rem 3rem 4rem 3rem;
+    padding: 9.75rem 3rem 4rem 3rem;
   }
   &__head {
     margin-bottom: 1rem;

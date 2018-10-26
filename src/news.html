@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbecue.ru</title>
+  <link rel="stylesheet" href="/bundle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+//=include ./components/topmenu.html
+
+<section class="news">
+  <div class="container">
+    <div class="news__wrapper">
+      <div class="news__nav">
+        <div class="news__heading">Полезно знать</div>
+        <div class="pagination">
+          <div class="pagination__text">Страницы:</div>
+          <div class="pagination__wrapper">
+            <div class="pagination__number">1</div>
+            <div class="pagination__number">2</div>
+            <div class="pagination__number active">3</div>
+            <div class="pagination__number">4</div>
+          </div>
+        </div>
+      </div>
+      <div class="news__content">
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+      </div>
+      <div class="news__footer">
+        <div class="pagination">
+          <div class="pagination__text">Страницы:</div>
+          <div class="pagination__wrapper">
+            <div class="pagination__number">1</div>
+            <div class="pagination__number">2</div>
+            <div class="pagination__number active">3</div>
+            <div class="pagination__number">4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+//=include './components/footer.html'
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/bundle.js"></script>
+</body>
+</html>

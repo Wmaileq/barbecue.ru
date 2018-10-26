@@ -1,0 +1,61 @@
+.news {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 9.75rem;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/notfound-bg.jpg') left bottom no-repeat;
+    opacity: 0.28;
+    mix-blend-mode: screen;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/gifts-bg.jpg') right top no-repeat;
+    opacity: 0.39;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__nav {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__heading {
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div:nth-child(4n) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+    & .newscard__text {
+      max-height: 5rem;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

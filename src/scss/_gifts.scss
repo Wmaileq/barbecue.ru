@@ -1,7 +1,7 @@
 .gifts {
   position: relative;
-  padding-top: 12.5rem;
-  padding-bottom: 25rem;
+  padding-top: 12.25rem;
+  padding-bottom: 20rem;
   &:after {
     content: '';
     position: absolute;
@@ -27,7 +27,7 @@
     text-align: center;
   }
   &__hint {
-    margin-bottom: 6rem;
+    margin-bottom: 6.5rem;
     max-width: 12.5rem;
     font-size: 1.125rem;
     font-weight: 300;
@@ -62,7 +62,7 @@
       margin-top: 6rem;
     }
     &_mtm {
-      margin-top: 6rem;
+      margin-top: 2rem;
     }
     &_mtl {
       margin-top: 9rem;

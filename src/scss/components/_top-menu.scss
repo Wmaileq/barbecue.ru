@@ -3,18 +3,21 @@
   z-index: 2;
   &__wrapper {
     display: flex;
-    height: 71px;
+    height: 4.4375rem;
+    padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
   }
   &__logo {
+    margin-right: 2rem;
     width: 7.625rem;
     height: 3.125rem;
     background: url('/img/logo.png') center center no-repeat;
     background-size: cover;
   }
   &__nav {
-    margin-right: 3rem;
+    margin-top: .35rem;
+    margin-right: 3.5rem;
     display: flex;
     list-style-type: none;
   }
@@ -107,6 +110,8 @@
     display: flex;
   }
   &__icon {
+    margin-top: .5rem;
+    margin-right: .625rem;
     & > i {
       position: relative;
       color: #937750;
@@ -135,6 +140,7 @@
     }
   }
   &__info {
+    margin-top: 1rem;
   }
   &__schedule {
     color: #b49468;
@@ -148,6 +154,7 @@
     }
   }
   &__cart {
+    margin-top: 1rem;
     position: relative;
     display: flex;
     cursor: pointer;
@@ -165,11 +172,14 @@
   }
   &__cart-icon {
     position: relative;
-    margin-right: 0.875rem;
+    margin-right: 1.25rem;
     & > i {
       color: #fff;
       font-size: 2.25rem;
     }
+  }
+  &__cart-text {
+    margin-top: .25rem;
   }
   &__cart-quantity {
     position: absolute;

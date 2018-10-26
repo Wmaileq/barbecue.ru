@@ -50,7 +50,7 @@
     &:nth-of-type(1){
       margin-right: 1.75rem;
     }
-    &:not(.media__button_active) {
+    &:not(.active) {
       background: transparent;
       border: 2px solid #d9a55a;
       box-shadow: none;

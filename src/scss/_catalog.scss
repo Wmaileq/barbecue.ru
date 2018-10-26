@@ -1,0 +1,82 @@
+.catalog {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 9.75rem;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/notfound-bg.jpg') left bottom no-repeat;
+    opacity: 0.28;
+    mix-blend-mode: screen;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/gifts-bg.jpg') right top no-repeat;
+    opacity: 0.39;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    width: 35.8125rem;
+    height: 19.5rem;
+    padding-left: 18rem;
+    cursor: pointer;
+    &:nth-of-type(1){
+      background: url('/img/catalog/1.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    &:nth-of-type(2){
+      background: url('/img/catalog/2.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    &:nth-of-type(3){
+      background: url('/img/catalog/3.jpg') center center no-repeat;
+      background-size: cover;
+    }
+    &:nth-of-type(4){
+      background: url('/img/catalog/4.jpg') center center no-repeat;
+      background-size: cover;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__prices {
+    font-size: 1rem;
+    color: #1e160b;
+    font-weight: 500;
+  }
+}

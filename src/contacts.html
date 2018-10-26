@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbecue.ru</title>
+  <link rel="stylesheet" href="/bundle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+//=include ./components/topmenu.html
+
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <h2 class="contacts__heading">Контакты</h2>
+      <div class="contacts__info">
+        <div class="contacts__item">
+          <i class="contacts__item-icon icon icon-phone"></i>
+          <div class="contacts__item-title">Контактный телефон</div>
+          <div class="contacts__text">
+            <a href="tel:+74957899962">+ 7 (495) 789-99-62</a>
+            <a href="tel:+74957894162">+ 7 (495) 789-41-62</a>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <i class="contacts__item-icon icon icon-message"></i>
+          <div class="contacts__item-title">Электронная почта</div>
+          <div class="contacts__text">
+            <a href="mailto:barbecue@mail.ru">barbecue@mail.ru</a>
+          </div>
+        </div>
+        <div class="contacts__item">
+          <i class="contacts__item-icon icon icon-placeholder"></i>
+          <div class="contacts__item-title">Адрес</div>
+          <div class="contacts__text">Московская область, г. Одинцово, ул. Транспортная, д.2 (7 км от МКАД по Минскому шоссе)</div>
+        </div>
+        <div class="contacts__item">
+          <i class="contacts__item-icon icon icon-megaphone"></i>
+          <div class="contacts__item-title">Мы в соц. сетях</div>
+          <div class="contacts__text"></div>
+        </div>
+      </div>
+      <h3 class="contacts__title">Адреса дилерской сети <span>(42)</span></h3>
+      <div class="contacts__map-wrapper">
+        <div class="contacts__map"></div>
+        <div class="contacts__nav">
+          <div class="contacts__buttons">
+            <button class="button contacts__button active">Россия</button>
+            <button class="button contacts__button">Казахстан</button>
+          </div>
+          <div class="contacts__addresses-wrapper barbecue-scrollbar">
+            <ol class="contacts__addresses">
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+              <li class="contacts__address">
+                <span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="contacts__title">Адреса самовывоза и экспозиций<span>(12)</span></h3>
+      <div class="contacts__map-wrapper">
+        <div class="contacts__map"></div>
+        <div class="contacts__nav">
+          <div class="contacts__addresses-title">г. Одинцово</div>
+          <div class="contacts__addresses-wrapper">
+            <ol class="contacts__addresses">
+              <li class="contacts__address"><span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span></li>
+            </ol>
+          </div>
+          <div class="contacts__addresses-title">г. Москва</div>
+          <div class="contacts__addresses-wrapper">
+            <ol class="contacts__addresses">
+              <li class="contacts__address"><span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span></li>
+              <li class="contacts__address"><span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span></li>
+              <li class="contacts__address"><span>Адрес: ул. Ленинска 8/23<br/>Телефон: +7 964 454 23 44</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__form-wrapper">
+        <div class="contacts__form-icon"></div>
+        <h2 class="contacts__form-heading">Оставить заявку</h2>
+        <div class="contacts__row">
+          <input placeholder="Ваше имя" class="contacts__input" type="text">
+          <input placeholder="Ваш телефон" class="contacts__input" type="text">
+        </div>
+        <div class="contacts__row">
+          <textarea placeholder="Текст вашего сообщения" class="contacts__textarea"></textarea>
+        </div>
+        <div class="contacts__form-footer">
+          <button class="button contacts__form-button">Отправить</button>
+          <div class="contacts__form-hint">Нажимая на кнопку, я даю согласия не обработку личных данных</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+//=include './components/footer.html'
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/bundle.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    jQuery('.barbecue-scrollbar').scrollbar();
+  });
+</script>
+</body>
+</html>

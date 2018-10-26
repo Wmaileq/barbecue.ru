@@ -45,13 +45,13 @@ function nextClientsSlide(){
 function changeMediaTab(tab){
   if (tab === 'foto'){
     $('#mediaTabFoto').addClass('active');
-    $('#mediaTabButtonFoto').addClass('media__button_active');
+    $('#mediaTabButtonFoto').addClass('active');
     $('#mediaTabVideo').removeClass('active');
-    $('#mediaTabButtonVideo').removeClass('media__button_active');
+    $('#mediaTabButtonVideo').removeClass('active');
   } else {
     $('#mediaTabVideo').addClass('active');
-    $('#mediaTabButtonVideo').addClass('media__button_active');
+    $('#mediaTabButtonVideo').addClass('active');
     $('#mediaTabFoto').removeClass('active');
-    $('#mediaTabButtonFoto').removeClass('media__button_active');
+    $('#mediaTabButtonFoto').removeClass('active');
   }
 }

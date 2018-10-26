@@ -1,0 +1,94 @@
+.catalog_2 {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 9.75rem;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/notfound-bg.jpg') left bottom no-repeat;
+    opacity: 0.28;
+    mix-blend-mode: screen;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/gifts-bg.jpg') right top no-repeat;
+    opacity: 0.39;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    width: 23rem;
+    height: 26rem;
+    padding-top: 21.5rem;
+    cursor: pointer;
+    &:nth-of-type(1){
+      background: url('/img/catalog/2_1.jpg') top center no-repeat;
+    }
+    &:nth-of-type(2){
+      background: url('/img/catalog/2_2.jpg') top center no-repeat;
+    }
+    &:nth-of-type(3){
+      background: url('/img/catalog/2_3.jpg') top center no-repeat;
+    }
+    &:nth-of-type(4){
+      background: url('/img/catalog/2_4.jpg') top center no-repeat;
+    }
+    &:nth-of-type(5){
+      background: url('/img/catalog/2_5.jpg') top center no-repeat;
+    }
+    &:nth-of-type(6){
+      background: url('/img/catalog/2_6.jpg') top center no-repeat;
+    }
+    &:nth-of-type(7){
+      background: url('/img/catalog/2_7.jpg') top center no-repeat;
+    }
+    &:nth-of-type(8){
+      background: url('/img/catalog/2_8.jpg') top center no-repeat;
+    }
+    &:nth-of-type(3n){
+      margin-right: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.385rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__quantity {
+    font-size: 1.125rem;
+    color: #d9a55a;
+    font-weight: 300;
+    width: 6.25rem;
+  }
+}

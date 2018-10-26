@@ -16,8 +16,8 @@
       <h2 class="media__heading">Видео и фото материалы</h2>
       <div class="media__nav">
         <div class="media__tabs">
-          <button class="button media__button media__button_active">Фото</button>
-          <button class="button media__button">Видео</button>
+          <button onclick="changeMediaTab('foto')" id="mediaTabButtonFoto" class="button media__button media__button_active">Фото</button>
+          <button onclick="changeMediaTab('video')" id="mediaTabButtonVideo" class="button media__button">Видео</button>
         </div>
         <div class="pagination">
           <div class="pagination__text">Страницы:</div>
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="media__block media__block_foto active">
+      <div id="mediaTabFoto" class="media__block active">
         <div class="media__img-wrapper">
           <img src="/img/media/1.jpg" alt="" class="media__img">
         </div>
@@ -67,15 +67,69 @@
           <img src="/img/media/4.jpg" alt="" class="media__img">
         </div>
       </div>
-      <div class="media__block media__block_video">
+      <div id="mediaTabVideo" class="media__block">
         <div class="media__video-wrapper">
-          <img src="" alt="" class="media__img">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
         </div>
         <div class="media__video-wrapper">
-          <img src="" alt="" class="media__img">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
         </div>
         <div class="media__video-wrapper">
-          <img src="" alt="" class="media__img">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
+        </div>
+        <div class="media__video-wrapper">
+          <div class="media__video-img-wrapper">
+            <div class="media__video-play"></div>
+            <img src="/img/media/video.jpg" alt="" class="media__video-img">
+          </div>
+          <div class="media__video-text">Описание видео в 3 строки</div>
         </div>
       </div>
     <div class="media__footer">
@@ -135,5 +189,11 @@
     </div>
   </div>
 </section>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/bundle.js"></script>
 </body>
 </html>

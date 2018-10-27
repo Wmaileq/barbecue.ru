@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Barbecue.ru</title>
+  <link rel="stylesheet" href="/bundle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
+//=include ./components/topmenu.html
+
+<section class="listing">
+  <div class="container">
+    <div class="listing__wrapper">
+      <div class="listing__sidebar">
+        <i class="icon icon-fireplace listing__icon"></i>
+        <div class="listing__category-active">Печи-барбекю</div>
+        <ul class="listing__categories">
+          <li class="listing__category"><a href="#">Садовые очаги</a></li>
+          <li class="listing__category"><a href="#">Детские домики</a></li>
+          <li class="listing__category"><a href="#">Аксессуары и подарочные наборы</a></li>
+        </ul>
+        <div class="listing__filter">
+          <div class="listing__key">Цена (руб.):</div>
+          <div class="listing__value">
+            <div class="listing__slider"></div>
+          </div>
+        </div>
+        <div class="listing__filter">
+          <div class="listing__key">Тип топки</div>
+          <div class="listing__value">
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Дрова и уголь</label>
+            </div>
+            <div class="listing__checkbox">
+              <input id="coal" type="checkbox">
+              <label for="coal"></label>
+              <label for="coal">Только уголь</label>
+            </div>
+          </div>
+        </div>
+        <div class="listing__filter">
+          <div class="listing__key">Доп. параметры</div>
+          <div class="listing__value">
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Белая серия</label>
+            </div>
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Керамический кирпич</label>
+            </div>
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Декор облицовка</label>
+            </div>
+            <div class="listing__checkbox">
+              <input id="coal" type="checkbox">
+              <label for="coal"></label>
+              <label for="coal">С доп. опциями</label>
+            </div>
+          </div>
+        </div>
+        <div class="listing__filter">
+          <div class="listing__key">Место установки</div>
+          <div class="listing__value">
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Для сада</label>
+            </div>
+            <div class="listing__checkbox">
+              <input id="logcoal" type="checkbox">
+              <label for="logcoal"></label>
+              <label for="logcoal">Для беседки</label>
+            </div>
+          </div>
+        </div>
+        <button class="button listing__button">Применить</button>
+        <div class="listing__hint">Отменить все</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="plan">
+  <div class="container">
+    <div class="plan__wrapper">
+      <div class="plan__form">
+        <div class="plan__heading">План-проект бесплатно</div>
+        <input placeholder="Ваше имя" type="text" class="input plan__input">
+        <input placeholder="Ваш телефон" type="text" class="input plan__input">
+        <div class="plan__file">
+          <input id="planFile" type="file">
+          <label for="planFile"><i class="icon icon-paper-clip"></i>Прикрепить фото установки печи</label>
+        </div>
+        <button class="button plan__button">Отправить</button>
+        <div class="plan__hint">Нажимая на кнопку, я даю согласие на обработку личных данных</div>
+      </div>
+      <div class="plan__foto">
+        <div class="plan__stats">
+          <div class="plan__stats-heading">Николай<br/>Сергеевич Черкасов</div>
+          <div class="plan__stat"><span>10</span> Лет<br/> стажа</div>
+          <div class="plan__stat"><span>630</span> Печей<br/> установлено</div>
+        </div>
+        <div class="plan__man">
+          <img class="plan__man-foto" src="/img/plan-man.jpg" alt="Николай Сергеевич Черкасов - печник высшей категории">
+          <div class="plan__man-hint">Печник высшей категории</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="container">
+    <div class="how__wrapper">
+      <h2 class="how__heading">Как выбрать печь-барбекю</h2>
+      <h3 class="how__title">По своей сути рыбатекст является альтернативой</h3>
+      <p class="how__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+      <h3 class="how__title">По своей сути рыбатекст является альтернативой</h3>
+      <p class="how__text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+      <div class="how__more">Читать все статьи</div>
+    </div>
+  </div>
+</section>
+
+//=include './components/footer.html'
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/bundle.js"></script>
 </body>
 </html>

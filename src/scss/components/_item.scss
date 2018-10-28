@@ -1,6 +1,12 @@
 .item {
   position: relative;
   width: 13.625rem;
+  &:hover {
+    .item__button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
   &__img-wrapper {
     position: relative;
     margin-bottom: 2rem;
@@ -77,6 +83,9 @@
     background-color: #d9a55a;
   }
   &__button {
+    visibility: hidden;
+    opacity: 0;
     width: 14.625rem;
+    transition: opacity 0.35s;
   }
 }

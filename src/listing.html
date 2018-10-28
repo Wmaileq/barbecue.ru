@@ -14,78 +14,328 @@
   <div class="container">
     <div class="listing__wrapper">
       <div class="listing__sidebar">
-        <i class="icon icon-fireplace listing__icon"></i>
-        <div class="listing__category-active">Печи-барбекю</div>
-        <ul class="listing__categories">
-          <li class="listing__category"><a href="#">Садовые очаги</a></li>
-          <li class="listing__category"><a href="#">Детские домики</a></li>
-          <li class="listing__category"><a href="#">Аксессуары и подарочные наборы</a></li>
-        </ul>
-        <div class="listing__filter">
-          <div class="listing__key">Цена (руб.):</div>
-          <div class="listing__value">
-            <div class="listing__slider"></div>
-          </div>
-        </div>
-        <div class="listing__filter">
-          <div class="listing__key">Тип топки</div>
-          <div class="listing__value">
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Дрова и уголь</label>
-            </div>
-            <div class="listing__checkbox">
-              <input id="coal" type="checkbox">
-              <label for="coal"></label>
-              <label for="coal">Только уголь</label>
+        <div class="listing__sidebar-main">
+          <i class="icon icon-fireplace listing__icon"></i>
+          <div class="listing__category-active">Печи-барбекю</div>
+          <ul class="listing__categories">
+            <li class="listing__category"><a href="#">Садовые очаги</a></li>
+            <li class="listing__category"><a href="#">Детские домики</a></li>
+            <li class="listing__category"><a href="#">Аксессуары и подарочные наборы</a></li>
+          </ul>
+          <div class="listing__filter">
+            <div class="listing__key">Цена (руб.):</div>
+            <div class="listing__value">
+              <div class="listing__slider-values">
+                <div class="listing__slider-value">от <span>120000</span></div>
+                <div class="listing__slider-value">до <span>270000</span></div>
+              </div>
+              <div id="rangeSlider" class="listing__slider"></div>
             </div>
           </div>
-        </div>
-        <div class="listing__filter">
-          <div class="listing__key">Доп. параметры</div>
-          <div class="listing__value">
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Белая серия</label>
-            </div>
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Керамический кирпич</label>
-            </div>
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Декор облицовка</label>
-            </div>
-            <div class="listing__checkbox">
-              <input id="coal" type="checkbox">
-              <label for="coal"></label>
-              <label for="coal">С доп. опциями</label>
+          <div class="listing__filter">
+            <div class="listing__key">Тип топки:</div>
+            <div class="listing__value">
+              <div class="listing__checkbox">
+                <input id="logcoal" type="checkbox">
+                <label for="logcoal">Дрова и уголь</label>
+                <label for="logcoal">12</label>
+              </div>
+              <div class="listing__checkbox">
+                <input id="coal" type="checkbox">
+                <label for="coal">Только уголь</label>
+                <label for="coal">12</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="listing__filter">
-          <div class="listing__key">Место установки</div>
-          <div class="listing__value">
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Для сада</label>
-            </div>
-            <div class="listing__checkbox">
-              <input id="logcoal" type="checkbox">
-              <label for="logcoal"></label>
-              <label for="logcoal">Для беседки</label>
+          <div class="listing__filter">
+            <div class="listing__key">Доп. параметры:</div>
+            <div class="listing__value">
+              <div class="listing__checkbox">
+                <input id="whiteseria" type="checkbox">
+                <label for="whiteseria">Белая серия</label>
+                <label for="whiteseria">14</label>
+              </div>
+              <div class="listing__checkbox">
+                <input id="ceramics" type="checkbox">
+                <label for="ceramics">Керамический кирпич</label>
+                <label for="ceramics">14</label>
+              </div>
+              <div class="listing__checkbox">
+                <input id="decor" type="checkbox">
+                <label for="decor">Декор облицовка</label>
+                <label for="decor">14</label>
+              </div>
+              <div class="listing__checkbox">
+                <input id="additional" type="checkbox">
+                <label for="additional">С доп. опциями</label>
+                <label for="additional">14</label>
+              </div>
             </div>
           </div>
+          <div class="listing__filter">
+            <div class="listing__key">Место установки:</div>
+            <div class="listing__value">
+              <div class="listing__checkbox">
+                <input id="forgarden" type="checkbox">
+                <label for="forgarden">Для сада</label>
+                <label for="forgarden">13</label>
+              </div>
+              <div class="listing__checkbox">
+                <input id="forstreet" type="checkbox">
+                <label for="forstreet">Для беседки</label>
+                <label for="forstreet">13</label>
+              </div>
+            </div>
+          </div>
+          <button class="button listing__button">Применить</button>
+          <div class="listing__hint">Отменить все</div>
         </div>
-        <button class="button listing__button">Применить</button>
-        <div class="listing__hint">Отменить все</div>
+        <div class="listing__sidebar-additional">
+          <div class="listing__sidebar-add-block">
+            <div class="listing__sidebar-add-heading">Новости</div>
+            <div class="listing__newscard">
+              <div class="listing__newscard-img-wrapper">
+                <img class="listing__newscard-img" src="/img/main-news/1.jpg" alt="СЕО текст новости">
+              </div>
+              <div class="listing__newscard-views">54 просмотра</div>
+              <div class="listing__newscard-title">Название новости в две строки и не более</div>
+              <div class="listing__newscard-text">Подробное описание новости желательно</div>
+            </div>
+            <div class="listing__add-more">Все новости</div>
+          </div>
+          <div class="listing__sidebar-add-block">
+            <div class="listing__sidebar-add-heading">Видео/фото</div>
+            <div class="listing__media-img-wrapper">
+              <div class="listing__media-play"></div>
+              <img src="/img/media/video.jpg" alt="" class="listing__media-img">
+            </div>
+            <div class="listing__media-text">Описание видео в 3 строки</div>
+            <div class="listing__add-more">Все видео</div>
+          </div>
+        </div>
+      </div>
+      <div class="listing__content">
+        <h2 class="listing__heading">Печи барбекю</h2>
+        <img class="listing__banner" src="/img/listing-banner.jpg" alt="Скидка 20% на печи барбекю, гарантия 1 год, гарантийное и пост-гарантийное обслуживание, скидка на все барбекю с 23 по 31 августа 2018 г.">
+        <div class="listing__sort">
+          <div class="listing__sort-hint">Сортировать товары:</div>
+          <div class="listing__sort-buttons">
+            <div class="listing__sort-button active">Сначала дешевле</div>
+            <div class="listing__sort-button">Сначала дороже</div>
+            <div class="listing__sort-button">По поулярности</div>
+            <div class="button listing__sort-bg"></div>
+          </div>
+        </div>
+        <div class="listing__catalog">
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+          <div class="listing__item item">
+            <div class="item__discount">-30%</div>
+            <div class="item__img-wrapper">
+              <img src="/img/product.jpg" alt="" class="item__img">
+            </div>
+            <div class="item__heading">Гриль барбекю для дачи "Пикник"</div>
+            <ul class="item__list">
+              <li class="item__list-item">Размер (ВхШхГ, см): 245х150х90;</li>
+              <li class="item__list-item">Вес: ~ 670 кг.</li>
+              <li class="item__list-item">Топливо: дрова</li>
+            </ul>
+            <div class="item__price">
+              <div class="item__price-old">64500 руб</div>
+              <div class="item__price-new">59 500 руб.</div>
+            </div>
+            <button class="button item__button">В корзину</button>
+          </div>
+        </div>
+        <div class="listing__more">Показать ещё</div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
@@ -138,5 +388,20 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="/bundle.js"></script>
+<script>
+  noUiSlider.create(document.getElementById('rangeSlider'), {
+    range: {
+      min: 40000,
+      max: 400000,
+    },
+    step: 1000,
+    start: [50000, 250000],
+    connect: true,
+  });
+  document.getElementById('rangeSlider').noUiSlider.on('update', function(v){
+    $('.listing__slider-value:eq(1) > span').text(v[1].split('.')[0]);
+    $('.listing__slider-value:eq(0) > span').text(v[0].split('.')[0]);
+  })
+</script>
 </body>
 </html>

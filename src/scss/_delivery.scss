@@ -1,0 +1,123 @@
+.delivery {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 9.75rem;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/delivery-bg.jpg') right top no-repeat;
+    opacity: 0.24;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__hint {
+    margin-bottom: 4rem;
+    color: #d9a55a;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  &__table {
+    margin-bottom: 8rem;
+  }
+  &__row {
+    display: flex;
+    border-bottom: 1px solid rgba(#fff, 0.28);
+    height: 4.5rem;
+    &:last-of-type{
+      border-bottom: none;
+    }
+  }
+  &__key {
+    display: flex;
+    align-items: center;
+    min-width: 50%;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 300;
+    vertical-align: center;
+  }
+  &__value {
+    display: flex;
+    align-items: center;
+    color: #d9a55a;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  &__map:before {
+    display: none;
+  }
+}
+.payment {
+  margin-bottom: 13.25rem;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+    color: #d9a55a;
+    font-weight: 500;
+    font-size: 1.875rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  &__card {
+    margin-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17.5rem;
+    height: 9.25rem;
+    padding: 0 2rem;
+    background-color: #1f1e22;
+    box-shadow: 0 0 3.5rem 0.5rem rgba(#0c0c0d, 0.25);
+    transition: transform 0.25s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  &__header {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    max-width: 11.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 300;
+    & > i {
+      margin-right: 1rem;
+      font-size: 3rem;
+      color: #d9a55a;
+    }
+    & > span {
+      display: block;
+    }
+  }
+  &__hint {
+    padding-left: 0.5rem;
+    color: #d7a459;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}

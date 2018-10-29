@@ -1,0 +1,66 @@
+.about {
+  position: relative;
+  margin-top: -71px;
+  padding-top: calc(5.125rem + 71px);
+  padding-bottom: 7.5rem;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('/img/gifts-bg.jpg') right top no-repeat;
+    opacity: 0.39;
+    mix-blend-mode: screen;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    margin-bottom: 4rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: 900;
+  }
+  &__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 3rem;
+    font-family: 'Museo Cyrl', serif;
+    font-weight: 900;
+    font-size: 3.75rem;
+    color: #fff;
+    span {
+      color: #d9a55a;
+    }
+  }
+  &__text {
+    max-width: 25rem;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__img {
+    max-width: 40.624rem;
+    img {
+      margin-bottom: 1.5rem;
+      max-width: 100%;
+    }
+  }
+  &__img-hint {
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 1.125rem;
+  }
+}

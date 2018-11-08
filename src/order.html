@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbecue.ru</title>
+  <link rel="stylesheet" href="/bundle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+//=include ./components/topmenu.html
+
+<section class="order">
+  <div class="order__big-step">Шаг 1</div>
+  <div class="container">
+    <div class="order__wrapper">
+      <div class="order__chosen">
+        <div class="order__chosen-title">Моя корзина <span>4</span></div>
+        <div class="order__chosen-items">
+          <div class="order__item">
+            <img src="/img/order-1.jpg" alt="Описание товара" class="order__item-img">
+            <div class="order__item-text">
+              <div class="order__item-title">Уличный камин барбекю из кирпича "ГРАНД</div>
+              <div class="order__item-price">155 260 руб.</div>
+            </div>
+            <span class="order__item-close"></span>
+          </div>
+          <div class="order__item">
+            <img src="/img/order-2.jpg" alt="Описание товара" class="order__item-img">
+            <div class="order__item-text">
+              <div class="order__item-title">Рамка для казана</div>
+              <div class="order__item-price">1200 руб.</div>
+            </div>
+            <span class="order__item-close"></span>
+          </div>
+          <div class="order__item">
+            <img src="/img/order-3.jpg" alt="Описание товара" class="order__item-img">
+            <div class="order__item-text">
+              <div class="order__item-title">Шиберная заслонка</div>
+              <div class="order__item-price">600 руб.</div>
+            </div>
+            <span class="order__item-close"></span>
+          </div>
+          <div class="order__item">
+            <img src="/img/order-4.jpg" alt="Описание товара" class="order__item-img">
+            <div class="order__item-text">
+              <div class="order__item-title">Удлинитель дымохода</div>
+              <div class="order__item-price">3 200 руб.</div>
+            </div>
+            <span class="order__item-close"></span>
+          </div>
+        </div>
+        <div class="order__chosen-amount">
+          Итого: 123 450 руб.
+        </div>
+        <div class="order__chosen-hint">Точную стоимость и сроки доставки уточняйте у менеджера</div>
+      </div>
+      <div class="order__steps">
+        <div class="order__step order__step_1">
+          <div class="order__step-wrapper">
+            <h2 class="order__heading">Оформление заказа</h2>
+            <span class="order__step-info">Шаг 1</span>
+            <div class="order__hint">Введите личную информацию</div>
+            <div class="order__row">
+              <input placeholder="Ваше имя" type="text" class="order__input order__input_margin">
+              <input placeholder="Ваш телефон" type="text" class="order__input">
+            </div>
+            <div class="order__row">
+              <input placeholder="Ваша электронная почта" type="text" class="order__input">
+            </div>
+            <div class="order__row order__row_last">
+              <input placeholder="Адрес доставки" type="text" class="order__input">
+            </div>
+            <div class="order__checkbox">
+              <input id="rules" type="checkbox">
+              <label for="rules">Я даю согласие на обработку личных данных</label>
+            </div>
+            <div class="order__buttons">
+              <button onclick="nextOrderSlide()" class="button order__button">Далее</button>
+              <button class="button order__button">Купить быстро</button>
+            </div>
+            <a href="/catalog.html" class="order__back">Продолжить покупки</a>
+          </div>
+        </div>
+        <div class="order__step order__step_2">
+          <div class="order__step-wrapper">
+            <h2 class="order__heading">Оформление заказа</h2>
+            <span class="order__step-info">Шаг 2</span>
+            <div class="order__hint">Выбор способа доставки</div>
+            <div class="order__icons">
+              <div class="order__icon">
+                <i class="icon icon-kremlin"></i>
+                <div class="order__icon-text">
+                  Доставка по г. Москве и МО
+                </div>
+              </div>
+              <div class="order__icon">
+                <i class="icon icon-delivery-truck"></i>
+                <div class="order__icon-text">
+                  Транспортной компанией в регионы
+                </div>
+              </div>
+              <div class="order__icon">
+                <i class="icon icon-trolley"></i>
+                <div class="order__icon-text">
+                  Самовывоз
+                </div>
+              </div>
+              <div class="order__textinfo">
+                <a href="/contacts.html" class="order__textinfo-link"><i class="icon icon-visibility-button"></i>Посмотреть адреса дилерской сети</a>
+                <a href="/delivery.html" class="order__textinfo-link"><i class="icon icon-visibility-button"></i>Посмотреть адреса самовывоза</a>
+              </div>
+            </div>
+            <div class="order__buttons">
+              <button onclick="nextOrderSlide()" class="button order__button">Далее</button>
+              <button class="button order__button">Купить быстро</button>
+            </div>
+            <div onclick="prevOrderSlide()" class="order__back">На шаг назад</div>
+          </div>
+        </div>
+        <div class="order__step order__step_3">
+          <div class="order__step-wrapper">
+            <h2 class="order__heading">Оформление заказа</h2>
+            <span class="order__step-info">Шаг 2</span>
+            <div class="order__hint">Выбор способа доставки</div>
+            <div class="order__icons">
+              <div class="order__icon">
+                <i class="icon icon-credit-card-terminal"></i>
+                <div class="order__icon-text">
+                  Безналичный расчет
+                </div>
+                <!--<div class="order__icon-hint">Для регионов</div>-->
+              </div>
+              <div class="order__icon">
+                <i class="icon icon-company"></i>
+                <div class="order__icon-text">
+                  Оплата в нашем офисе
+                </div>
+                <!--<div class="order__icon-hint">Картой или наличными</div>-->
+              </div>
+              <div class="order__icon">
+                <i class="icon icon-brickwall"></i>
+                <div class="order__icon-text">
+                  Оплата после установки
+                </div>
+                <!--<div class="order__icon-hint">Москва и МО</div>-->
+              </div>
+              <div class="order__textinfo">
+                <div class="order__textinfo-link">Подробности уточняйте у менеджера</div>
+              </div>
+            </div>
+            <div class="order__buttons">
+              <button onclick="nextOrderSlide()" class="button order__button">Далее</button>
+              <button class="button order__button">Купить быстро</button>
+            </div>
+            <div onclick="prevOrderSlide()" class="order__back">На шаг назад</div>
+          </div>
+        </div>
+        <div class="order__step order__step_4">
+          <div class="order__step-wrapper">
+            <h2 class="order__heading">Заказ оформлен</h2>
+            <span class="order__step-info">Финиш</span>
+            <div class="order__hint">Спасибо, Константин! Ваш заказ принят</div>
+            <div class="order__complete">
+              <i class="icon icon-check-mark order__complete-icon"></i>
+              <div class="order__complete-text">
+                <div class="order__complete-title">Номер вашего заказа:</div>
+                <div class="order__complete-number">23445</div>
+                <div class="order__complete-hint">В ближайшее время с Вами свяжется наш специалист для выяснения подробностей</div>
+              </div>
+            </div>
+            <div class="order__buttons">
+              <a href="index.html" class="button order__button">На главную</a>
+            </div>
+            <div onclick="prevOrderSlide()" class="order__back">На шаг назад</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+//=include './components/footer.html'
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/bundle.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.order__steps').slick({
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      adaptiveHeight: true
+    });
+  })
+</script>
+</body>
+</html>

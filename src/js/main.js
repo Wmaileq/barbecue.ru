@@ -60,6 +60,12 @@ function prevAddSlide(){
 function nextAddSlide(){
   $('.card__add-slider').slick('slickNext');
 }
+function prevOrderSlide(){
+  $('.order__steps').slick('slickPrev');
+}
+function nextOrderSlide(){
+  $('.order__steps').slick('slickNext');
+}
 function changeMediaTab(tab){
   if (tab === 'foto'){
     $('#mediaTabFoto').addClass('active');

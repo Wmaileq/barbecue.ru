@@ -11,24 +11,57 @@
     width: 67.8125rem;
     height: 43.875rem;
     padding-left: 6.5rem;
+    padding-top: 6.25rem;
     &:after {
       content: '';
       position: absolute;
       bottom: 0;
-      right: -5.5rem;
+      right: -5.25rem;
+      z-index: 0;
       left: 4rem;
       top: 0;
       background: url('/img/modal-consult-bg.png') bottom right no-repeat;
     }
   }
+  &_dir {
+    width: 61.875rem;
+    height: 42.8125rem;
+    padding-top: 5rem;
+    padding-left: 6.5rem;
+    background: url('/img/modal-dir.png') right bottom no-repeat;
+  }
+  &_fast {
+    width: 54.5625rem;
+    height: 41.625rem;
+    padding-top: 5rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  }
+  &_order {
+    width: 45.8125rem;
+    padding: 5rem 6.5rem;
+  }
   &__close {
     position: absolute;
     top: 2.5rem;
     right: 2rem;
+    z-index: 1;
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
+    &:hover {
+      &:before {
+        box-shadow: 0 0 0.8rem 0.1rem rgba(#d9a55a, 0.2);
+      }
+      &:after {
+        box-shadow: 0 0 0.8rem 0.1rem rgba(#d9a55a, 0.2);
+      }
+    }
     &:before {
       content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 1.5rem;
       height: 1px;
       background-color: #d9a55a;
@@ -36,11 +69,59 @@
     }
     &:after {
       content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 1.5rem;
       height: 1px;
       background-color: #d9a55a;
       transform: rotate(-45deg);
     }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    color: #fff;
+    font-family: 'Museo Cyrl', serif;
+    font-weight: 900;
+  }
+  &__hint {
+    margin-bottom: 1.5rem;
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 1.125rem;
+  }
+  &__input {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #d9a55a;
+    font-size: 1.125rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Futura PT', sans-serif;
+    transition: border-bottom-color 0.2s;
+    &::placeholder {
+      font-weight: 300;
+      font-size: 1.125rem;
+      font-family: 'Futura PT', sans-serif;
+      color: #fff;
+    }
+    &:focus {
+      border-bottom: 2px solid #bf5a00;
+    }
+  }
+  &__button {
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 4.4375rem;
+  }
+  &__personal {
+    font-weight: 300;
+    color: #58575d;
+    font-size: 1rem;
   }
 }
 
@@ -55,13 +136,6 @@
     background: url('/img/modal-ty-icon.png') center center no-repeat;
     background-size: cover;
   }
-  &__title {
-    margin-bottom: 1rem;
-    font-size: 2.25rem;
-    color: #fff;
-    font-family: 'Museo Cyrl', serif;
-    font-weight: 900;
-  }
   &__hint {
     margin-bottom: 4rem;
     max-width: 20rem;
@@ -73,12 +147,155 @@
 }
 
 .modal-consult {
-  padding-top: 6.25rem;
+  position: relative;
+  z-index: 1;
   max-width: 25rem;
   &__title {
+    margin-bottom: 0.5rem;
     font-size: 2.25rem;
     color: #fff;
     font-family: 'Museo Cyrl', serif;
     font-weight: 900;
+  }
+  &__inputs {
+    margin-bottom: 3rem;
+    display: flex;
+    input:nth-of-type(1){
+      margin-right: 2.25rem;
+    }
+  }
+}
+
+.modal-dir {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    input {
+      flex-grow: 0;
+      width: 100%;
+    }
+    textarea {
+      flex-grow: 0;
+      width: 100%;
+      resize: vertical;
+    }
+  }
+}
+
+.modal-fast {
+  display: flex;
+  justify-content: space-between;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    input:last-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+  &__item {
+    max-width: 11.25rem;
+  }
+  &__title {
+    margin-bottom: 2.5rem;
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  &__img {
+    margin-bottom: 1.5rem;
+    width: 11rem;
+    height: 15.5rem;
+  }
+  &__name {
+    margin-bottom: .5rem;
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  &__price {
+    font-size: .875rem;
+    color: #fff;
+    font-weight: 300;
+  }
+}
+.modal-order {
+  &__item {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+  }
+  &__img {
+    margin-right: 1.5rem;
+    width: 3.625rem;
+    height: 4.25rem;
+  }
+  &__name {
+    max-width: 15rem;
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  &__price {
+    margin-left: auto;
+    font-weight: 300;
+    color: #fff;
+  }
+  &__additives {
+    position: relative;
+    margin-bottom: 3.5rem;
+    padding-left: 3.75rem;
+    padding-top: 0.5rem;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('/img/modal-plus.png') center center no-repeat;
+      background-size: cover;
+      width: 3.25rem;
+      height: 3.25rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.125rem;
+    span {
+      font-weight: 300;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+  &__additive {
+    color: #d9a55a;
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+  &__buttons {
+    display: flex;
+    button {
+      width: 14.75rem;
+      height: 4.4375rem;
+      &:nth-of-type(1){
+        margin-right: 1.375rem;
+      }
+      &:nth-of-type(2){
+        background: transparent;
+        border: 2px solid #d9a55a;
+        box-shadow: none;
+        &:hover {
+          border-image: linear-gradient(to right, #efac64, #fc6d06) 1;
+          box-shadow: 0 0.25rem 1.25rem 0.25rem rgba(#bf5a00, 0.24);
+        }
+      }
+    }
   }
 }

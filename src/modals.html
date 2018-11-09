@@ -12,7 +12,7 @@
   <span class="modal__close"></span>
   <div class="modal-ty">
     <div class="modal-ty__icon"></div>
-    <div class="modal-ty__title">Спасибо, Владимир!</div>
+    <div class="modal__title">Спасибо, Владимир!</div>
     <div class="modal-ty__hint">Ваша заявка принята и обрабатывается. Вскоре с Вами свяжется наш специалист</div>
     <button class="button modal-ty__button">Продолжить</button>
   </div>
@@ -21,15 +21,72 @@
 <div class="modal modal_consult">
   <span class="modal__close"></span>
   <div class="modal-consult">
-    <div class="modal-consult__title">Бесплатная консультация</div>
-    <div class=modal-consult__hint">Введите личные данные и наш специалист обсудит с Вами все вопросы</div>
+    <div class="modal__title">Бесплатная консультация</div>
+    <div class="modal__hint">Введите личные данные и наш специалист обсудит с Вами все вопросы</div>
     <div class="modal-consult__inputs">
-      <input placeholder="Ваше имя" type="text" class="modal-consult__input">
-      <input placeholder="Ваш телефон" type="text" class="modal-consult__input">
+      <input placeholder="Ваше имя" type="text" class="modal__input">
+      <input placeholder="Ваш телефон" type="text" class="modal__input">
     </div>
-    <button class="button modal-ty__button">Перезвонить мне</button>
-    <div class="modal-consult__personal">Нажимая на кнопку я даю согласие на обработку персональных данных</div>
+    <button class="button modal__button">Перезвонить мне</button>
+    <div class="modal__personal">Нажимая на кнопку я даю согласие на обработку персональных данных</div>
   </div>
 </div>
+
+<div class="modal modal_dir">
+  <span class="modal__close"></span>
+  <div class="modal-dir">
+    <div class="modal__title">Написать лично директору</div>
+    <div class="modal__hint">Если Вы столкнулись с не стандартной проблемой, напишите лично директору</div>
+    <div class="modal-dir__inputs">
+      <input placeholder="Ваша электронная почта" type="text" class="modal__input">
+      <textarea rows="2" placeholder="Текст Вашего сообщения" class="modal__input"></textarea>
+    </div>
+    <button class="button modal__button">Продолжить</button>
+    <div class="modal__personal">Нажимая на кнопку я даю согласие на обработку персональных данных</div>
+  </div>
+</div>
+
+<div class="modal modal_fast">
+  <span class="modal__close"></span>
+  <div class="modal-fast">
+    <div class="modal-fast__form">
+      <div class="modal__title">Быстрая покупка</div>
+      <div class="modal__hint">Просто введите имя и телефон - остальное мы сделаем за Вас</div>
+      <input placeholder="Ваша электронная почта" type="text" class="modal__input">
+      <input placeholder="Ваша электронная почта" type="text" class="modal__input">
+      <button class="button modal__button">Продолжить</button>
+      <div class="modal__personal">Нажимая на кнопку я даю согласие на обработку персональных данных</div>
+    </div>
+    <div class="modal-fast__item">
+      <div class="modal-fast__title">Ваш товар:</div>
+      <img src="/img/product.jpg" alt="" class="modal-fast__img">
+      <div class="modal-fast__name">Уличный камин-барбекю из кирпича "ГРАНД"</div>
+      <div class="modal-fast__price">126 300 руб.</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal_order">
+  <span class="modal__close"></span>
+  <div class="modal-order">
+    <div class="modal__title">Товар добавлен в корзину</div>
+    <div class="modal-order__item">
+      <img src="/img/product.jpg" class="modal-order__img">
+      <div class="modal-order__name">Уличный камин барбекю из кирпича "ГРАНД"</div>
+      <div class="modal-order__price">155 260 руб.</div>
+    </div>
+    <div class="modal-order__additives">
+      <div class="modal-order__title">Дополнительные опции: <span>162 500 руб.</span></div>
+      <div class="modal-order__additive">+ Удлинитель дымохода 3 450 руб.</div>
+      <div class="modal-order__additive">+ Рамка для казана 3 450 руб.</div>
+      <div class="modal-order__additive">+ Шиберная заслонка 4 900 руб.</div>
+    </div>
+    <div class="modal-order__buttons">
+      <button class="button">Оформить заказ</button>
+      <button class="button">Продолжить покупки</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

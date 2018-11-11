@@ -79,3 +79,14 @@ function changeMediaTab(tab){
     $('#mediaTabButtonFoto').removeClass('active');
   }
 }
+function changeCardTab(tab){
+  $('#cardDesc').removeClass('active');
+  $('#cardReview').removeClass('active');
+  $('#cardMount').removeClass('active');
+
+  $('#cardDescTab').removeClass('active');
+  $('#cardReviewTab').removeClass('active');
+  $('#cardMountTab').removeClass('active');
+  $('#'+tab).addClass('active');
+  $('#'+tab+'Tab').addClass('active');
+}

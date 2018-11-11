@@ -274,16 +274,111 @@
           </div>
           <div class="card__tab-nav">
             <div class="card__sort-buttons">
-              <div class="card__sort-button active">Описание товара</div>
-              <div class="card__sort-button">Отзывы</div>
-              <div class="card__sort-button">Монтаж</div>
+              <div id="cardDescTab" onclick="changeCardTab('cardDesc')" class="card__sort-button active">Описание товара</div>
+              <div id="cardReviewTab" onclick="changeCardTab('cardReview')" class="card__sort-button">Отзывы</div>
+              <div id="cardMountTab" onclick="changeCardTab('cardMount')" class="card__sort-button">Монтаж</div>
               <div class="button card__sort-bg"></div>
             </div>
           </div>
           <div class="card__tabs">
-            <div class="card__tab"></div>
-            <div class="card__tab"></div>
-            <div class="card__tab"></div>
+            <div id="cardDesc" class="card__tab active">
+              <div class="card__tab-info">
+                <p>Здесь текст из админки</p>
+              </div>
+              <div class="card__tab-pdf"><i class="icon icon-pdf"></i>Скачать инструкцию по монтажу</div>
+              <div class="card__tab-title">Технические характеристики</div>
+              <div class="card__tab-table">
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Ширина, мм:</div>
+                  <div class="card__tab-value">1 550</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Глубина, мм:</div>
+                  <div class="card__tab-value">640</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Высота, мм:</div>
+                  <div class="card__tab-value">2 470</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Вес, кг:</div>
+                  <div class="card__tab-value">600, 1 евро-паллет (0,8х1,2х1,6 м)</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Топливо</div>
+                  <div class="card__tab-value">Дрова/Уголь</div>
+                </div>
+              </div>
+            </div>
+            <div id="cardReview" class="card__tab">
+              <div class="card__tab-heading">Уличный камин-барбекю из кирпича "ГРАНД"</div>
+              <div class="pagination card__tab-pagination">
+                <div class="pagination__text">Страницы:</div>
+                <div class="pagination__wrapper">
+                  <div class="pagination__number">1</div>
+                  <div class="pagination__number">2</div>
+                  <div class="pagination__number active">3</div>
+                  <div class="pagination__number">4</div>
+                </div>
+              </div>
+              <div class="card__tab-review">
+                <div class="card__review-header">
+                  <div class="card__review-title">Анатолий Генадьевич</div>
+                  <div class="card__review-date">12.08.2019</div>
+                </div>
+                <p class="card__review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="card__tab-review">
+                <div class="card__review-header">
+                  <div class="card__review-title">Анатолий Генадьевич</div>
+                  <div class="card__review-date">12.08.2019</div>
+                </div>
+                <p class="card__review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="card__tab-review">
+                <div class="card__review-header">
+                  <div class="card__review-title">Анатолий Генадьевич</div>
+                  <div class="card__review-date">12.08.2019</div>
+                </div>
+                <p class="card__review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="card__tab-review">
+                <div class="card__review-header">
+                  <div class="card__review-title">Анатолий Генадьевич</div>
+                  <div class="card__review-date">12.08.2019</div>
+                </div>
+                <p class="card__review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="pagination card__tab-pagination">
+                <div class="pagination__text">Страницы:</div>
+                <div class="pagination__wrapper">
+                  <div class="pagination__number">1</div>
+                  <div class="pagination__number">2</div>
+                  <div class="pagination__number active">3</div>
+                  <div class="pagination__number">4</div>
+                </div>
+              </div>
+            </div>
+            <div id="cardMount" class="card__tab">
+              <div class="card__tab-table">
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Наращивание дымохода:</div>
+                  <div class="card__tab-value">От 2 000 рублей за 1 секцию</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Проход простой кровли:</div>
+                  <div class="card__tab-value">10 000 рублей</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Проход утепленной/обшитой кровли:</div>
+                  <div class="card__tab-value">15 000 рублей</div>
+                </div>
+                <div class="card__tab-row">
+                  <div class="card__tab-key">Герметизация кровли:</div>
+                  <div class="card__tab-value">3 000 рублей</div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="card__viewed">
             <div class="card__viewed-header">

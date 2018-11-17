@@ -1,3 +1,6 @@
+function toggleSearchForm(){
+  $('.top-menu__search-wrapper').toggleClass('active');
+}
 function toggleNavMore(){
   $('.top-menu__nav-item.more').toggleClass('active');
 }

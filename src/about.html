@@ -35,7 +35,7 @@
     <div class="audio__wrapper">
       <div class="audio__header">
         <div class="audio__block">
-          <h2 class="audio__heading">Послушать радио</h2>
+          <h2 class="audio__heading">Прослушать аудио</h2>
           <div class="audio__hint">Руководитель компнии</div>
         </div>
         <p class="audio__text">Уважаемые покупатели, спасибо за выбор нашей продукции! Мы надеемся, что наши барбекю смогли принести значительную часть тепла и радости вам и вашим близким </p>
@@ -45,7 +45,14 @@
         <div class="audio__content-wrapper">
           <div class="audio__name">Виталий Симонович</div>
           <div class="audio__title">Генеральный директор компании</div>
-          <div class="audio__music"></div>
+          <div class="audio__music">
+            <i class="audio__play"></i>
+            <i class="audio__stop"></i>
+            <audio src="http://drivemusic.me/dl/P-lW917Tia0WT5N5zUNuVw/1542496120/download_music/2012/10/splin-vykhoda-net.mp3" id="audio"></audio>
+            <div class="audio__progress">
+              <div class="audio__progress-inner"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -203,6 +210,21 @@
     slidesToScroll: 4,
     variableWidth: true
   });
+  const player = document.getElementById('audio');
+  $('.audio__play').on('click',function(){
+    player.play();
+    $('.audio__stop')[0].style.display='block';
+    $('.audio__play')[0].style.display='none';
+  });
+  $('.audio__stop').on('click',function(){
+    player.pause();
+    $('.audio__play')[0].style.display='block';
+    $('.audio__stop')[0].style.display='none';
+
+  });
+  $('#audio').on('timeupdate', function(){
+    $('.audio__progress-inner')[0].style.width=this.currentTime*100 / this.duration + '%';
+  })
 </script>
 </body>
 </html>

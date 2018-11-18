@@ -2,6 +2,9 @@
   padding-top: 9.5rem;
   height: 62.5rem;
   background: url('/img/how-bg.jpg') left center no-repeat;
+  @media (max-width: 1600px){
+    background-size: 40%;
+  }
   &__wrapper {
     display: flex;
     flex-direction: column;

@@ -34,6 +34,9 @@
       bottom: 0;
       background: url('/img/footer-img.jpg') bottom right no-repeat;
       mix-blend-mode: lighten;
+      @media (max-width: 1480px){
+        right: 0;
+      }
     }
   }
   &__top {

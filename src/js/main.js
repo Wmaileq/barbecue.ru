@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  $(window).on('scroll', function(){
+     if (window.scrollY > 200) {
+       document.getElementById('toTop').style.visibility = 'visible';
+     } else {
+       document.getElementById('toTop').style.visibility = 'hidden';
+     }
+  })
+});
+function scrollToTop(){
+    $('html, body').animate({scrollTop: 0},500);
+}
 function toggleSearchForm(){
   $('.top-menu__search-wrapper').toggleClass('active');
 }

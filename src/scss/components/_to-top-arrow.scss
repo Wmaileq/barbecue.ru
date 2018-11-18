@@ -1,3 +1,45 @@
 .to-top{
-  display: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  right: 2rem;
+  visibility: hidden;
+  width: 6rem;
+  height: 6rem;
+  border: 0;
+  cursor: pointer;
+  background-color: #d9a55a;
+  box-shadow: 0 0 4rem 1rem rgba(#d9a55a, 0.24);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 0 4rem 1.25rem rgba(#d9a55a, 0.34);
+    &:before {
+      top: 1.75rem
+    }
+    &:after {
+      top: 1.875rem
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 2.125rem;
+    left: 2.625rem;
+    width: .75rem;
+    height: .75rem;
+    border-top: 1px solid #1f1e22;
+    border-right: 1px solid #1f1e22;
+    transform: rotate(-45deg);
+    transition: top 0.2s;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    width: 1px;
+    height: 1.75rem;
+    background-color: #1f1e22;
+    transition: top 0.2s;
+  }
 }

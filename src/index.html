@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Barbecue.ru</title>
-  <link rel="stylesheet" href="/bundle.css?ver-2">
+  <link rel="stylesheet" href="/bundle.css?ver-4">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -45,8 +45,8 @@
           </div>
         </div>
         <!--<div class="main__nav-item no-menu">-->
-          <!--<i class="icon icon-besedka main__nav-icon"></i>-->
-          <!--<div class="main__nav-text">Детские домики</div>-->
+        <!--<i class="icon icon-besedka main__nav-icon"></i>-->
+        <!--<div class="main__nav-text">Детские домики</div>-->
         <!--</div>-->
         <div onclick="toggleNavSlide(this)" class="main__nav-item">
           <i class="icon icon-besedka main__nav-icon"></i>
@@ -102,38 +102,7 @@
               <img src="/img/main-slider/9.png" alt="." class="main__anim main__anim_9"/>
               <img src="/img/main-slider/3.png" alt="." class="main__anim main__anim_3"/>
               <img src="/img/main-slider/4.png" alt="." class="main__anim main__anim_4"/>
-              <div class="main__fire">
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-                <div class="main__fire-particle"></div>
-              </div>
+              <img src="/img/main-slider/fire.gif" class="main__fire"/>
             </div>
           </div>
           <div class="main__slide">
@@ -283,7 +252,7 @@
             <div class="constructor__variant">
               <div class="constructor__icon-wrapper">
                 <i class="icon icon-log-nice"></i>
-                <i class="icon icon-coal"></i>
+                <img src="/img/coal.png" alt="." class="constructor__coal"/>
               </div>
               <div class="constructor__variant-text">
                 Дрова + уголь
@@ -291,7 +260,7 @@
             </div>
             <div class="constructor__variant">
               <div class="constructor__icon-wrapper">
-                <i class="icon icon-coal"></i>
+                <img src="/img/coal.png" alt="." class="constructor__coal"/>
               </div>
               <div class="constructor__variant-text">
                 Только уголь
@@ -682,6 +651,7 @@
       </div>
       <div class="clients__slider">
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элег"'
           data-text="По своей сутиекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -691,6 +661,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Виталий Купринов"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -700,6 +671,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владимир Булыгин"
           data-title='Владелец печи "Элегия"'
           data-text="1По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -709,6 +681,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -718,6 +691,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -727,6 +701,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -736,6 +711,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -745,6 +721,7 @@
           </div>
         </div>
         <div
+          onclick="nextClientsSlide()"
           data-author="Владислав Кирилёнок"
           data-title='Владелец печи "Элегия"'
           data-text="По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отлеичии от lorem ipsum, текст рыба на русском языке наполнит любой макет"
@@ -772,15 +749,15 @@
         <div onClick="nextNewsSlide()" class="main-news__arrow-right"></div>
       </div>
       <div class="main-news__slider">
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
-//=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
+        //=include './components/newscard.html'
       </div>
       <a href="news.html" class="main-news__more">Все новости</a>
     </div>
@@ -843,7 +820,7 @@
     });
     $('.clients__slider').slick({
       arrows: false,
-      draggable: false,
+      draggable:false,
       variableWidth: true,
       slidesToShow: 5,
       slidesToScroll: 1,
@@ -858,6 +835,10 @@
       currentSlide.addClass('clients__slide_active');
     })
     // const rellax = new Rellax('.rellax');
+  })
+  $('.constructor__variant').click(function () {
+    $('.constructor__variant').removeClass('active');
+    $(this).addClass('active');
   })
 </script>
 </body>

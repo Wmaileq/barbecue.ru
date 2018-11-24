@@ -98,15 +98,25 @@
     background-color: #1f1e22;
     transition: border 0.2s, box-shadow 0.2s;
     cursor: pointer;
-    &:hover {
+    &:hover, &.active {
       border: 0.25rem solid #d9a55a;
       box-shadow: 0 0 65px 8px rgba(20, 19, 23, 0.82), 0 0 65px 8px rgba(#d9a55a, 0.2) inset;
     }
   }
   &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
     font-size: 4rem;
     color: #d19056;
+    & > img {
+      width: 4.5rem;
+      height: 3.375rem;
+    }
+    & > i {
+      margin-right: 1rem;
+    }
   }
   &__button {
     position: relative;

@@ -43,21 +43,21 @@ $animation-duration: 10s;
     &.active {
       &:before {
         transform: translateY(2rem) rotate(-135deg);
-        transition-delay: 1.15s;
+        transition-delay: 0.85s;
       }
       .main__nav-slide {
         visibility: visible;
-        animation: mainSlideShow 1.25s 1 ease-in-out;
+        animation: mainSlideShow 0.75s 1 ease-in-out;
         opacity: 1;
         &:before {
           width: 4rem;
-          transition-delay: 1.15s;
+          transition-delay: 0.85s;
         }
       }
       .main__nav-menu {
         opacity: 1;
         transition: opacity 0.2s;
-        transition-delay: 1.25s;
+        transition-delay: 0.95s;
       }
 
     }
@@ -315,57 +315,18 @@ $animation-duration: 10s;
       right: 325px;
     }
   }
-  $fireColor: rgb(255,80,0);
-  $fireColorT: rgba(255,80,0,0);
-  $dur: 1s;
-  $blur: 0.03em;
-  $fireRad: 3em;
-  $parts: 30;
-  $partSize: 5em;
   &__fire {
     position: absolute;
     z-index: 1000;
     right: 12rem;
     top: 22rem;
     font-size: 24px;
-    filter: blur($blur);
     width: 14rem;
     height: 8rem;
-  }
-  &__fire-particle {
-    animation: rise $dur ease-in infinite;
-    background-image: radial-gradient($fireColor 20%,$fireColorT 70%);
-    border-radius: 50%;
     mix-blend-mode: screen;
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    width: $partSize;
-    height: $partSize;
-    // spread particles out in time and x-position to get desired effect
-    @for $p from 1 through $parts {
-      &:nth-of-type(#{$p}) {
-        animation-delay: $dur * random();
-        left: calc((100% - #{$partSize}) * #{($p - 1)/$parts});
-      }
-    }
   }
 }
 
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(0) scale(1);
-  }
-  25% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-5rem) scale(0);
-  }
-}
 
 @keyframes mainSlideShow {
   0% {

@@ -316,14 +316,19 @@ $animation-duration: 10s;
     }
   }
   &__fire {
-    position: absolute;
-    z-index: 1000;
-    right: 12rem;
-    top: 22rem;
-    font-size: 24px;
-    width: 14rem;
-    height: 8rem;
-    mix-blend-mode: screen;
+    visibility: hidden;
+    @supports (mix-blend-mode: screen) {
+      position: absolute;
+      z-index: 1000;
+      right: 12rem;
+      top: 22rem;
+      font-size: 24px;
+      width: 14rem;
+      height: 8rem;
+      mix-blend-mode: screen;
+      visibility: visible;
+    }
+
   }
 }
 

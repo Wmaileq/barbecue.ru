@@ -92,11 +92,12 @@
   &__video-wrapper {
     display: flex;
     flex-direction: column;
+    width: 22.6875rem;
   }
   &__video-img-wrapper {
     position: relative;
     margin-bottom: 1.75rem;
-    width: 22.6875rem;
+    width: 100%;
     height: 14.75rem;
     overflow: hidden;
     &:after {

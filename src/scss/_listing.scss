@@ -256,7 +256,12 @@
   &__catalog {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    & > a {
+      margin-right: 4rem;
+    }
+    & > a:nth-of-type(3n){
+      margin-right: 0;
+    }
   }
   &__item {
     margin-bottom: 3.75rem;
